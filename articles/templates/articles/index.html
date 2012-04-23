@@ -1,3 +1,4 @@
+{% load markup %}
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
@@ -24,8 +25,14 @@
         </header>
         <section id="article">
             {% with article=articles|first %}
-                <h2>{{ article.title }}</h2>
-                {{ article.content }}
+                <article>
+                    <h2>{{ article.title }}</h2>
+                    <dl>
+                        <dt>Published</dt>
+                        <dd>{{ article.published }}</dd>
+                    </dl>
+                    {{ article.content|markdown }}
+                </article>
             {% endwith %}
         </section>
         <section id="articles">

@@ -21,7 +21,7 @@ h1 {
 h1 b {
     display: block;
     font-size: 75px;
-    line-height: 50px;
+    line-height: 60px;
     font-weight: normal;
 }
 
@@ -38,10 +38,4 @@ header p {
     margin: 0;
     font-family: "SpadeRound", sans-serif;
     line-height: 1;
-}
-
-section {
-    float: left;
-    width: 400px;
-    margin: 20px 0;
 }

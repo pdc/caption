@@ -6,6 +6,6 @@
     <body>
         <p><a href="{% url article-index year=year %}">{{ year }}</a></p>
         <h1>{{ article.title }}</h1>
-        <p>{{ article.content }}</p>
+        {{ article.content|markdown:"safe" }}
     </body>
 </html>
