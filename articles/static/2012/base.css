@@ -1,22 +1,38 @@
 @import url(MyFontsWebfontsOrderM3677995.css);
 
 body {
+    padding: 0;
+    margin: 0;
+
     font-family: "Gibson", "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
     line-height: 1.25;
+    background: #FDFFD7 url(paper.jpeg) left top repeat-x;
+    background: url(paper-top-left.png) left top no-repeat,
+        url(paper-left.png) left top repeat-y,
+        #FDFFD7 url(paper.jpeg) left top repeat-x;
 }
 
 section {
     float: left;
-    width: 480px;
     margin: 20px 0;
 }
 
+article {
+    width: 640px; /* 78u */
+}
+
+section h2,
+section p,
+section ul {
+    width: 460px; /* 6 u - gutter */
+}
+
 section h2 {
-    margin: 0 90px 0.5em 10px;
+    margin: 0 10px 0.5em 10px;
 }
 
 section p {
-    margin: 0 90px 1.25em 10px;
+    margin: 0 170px 1.25em 10px;
 }
 
 section ul {
@@ -25,14 +41,40 @@ section ul {
 }
 
 section li {
-    margin: 0.625em 90px 0.625em 20px;
+    /* UL element defines the gutterl the side margins here are for the bullet */
+    margin: 0.625em 0 0.625em 2em;
 }
 
+ul.features {
+    float: left;
+    width: 640px;
+    margin: 0;
+}
+
+ul.features li {
+    float: left;
+    width: 140px;
+    margin: 0.625em 10px;
+
+    list-style-type: none;
+}
+
+ul.features strong,
+ul.features small {
+    display: block;
+}
+ul.features small {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+
+
+/* DL elements go in articles  to the right of the text */
 section dl {
     font-size: 0.7em;
-
     float: right;
-    width: 80px;
+    width: 160px;
     padding: 0;
     margin: 0;
 }
@@ -49,5 +91,14 @@ section dt {
 
 section dd {
     margin: 0 10px 0.625em;
+    color: #333;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* SPAN in sections is used for all-caps abbreviations */
+section span {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 

@@ -14,7 +14,7 @@
                 <i>Summer Special</i>
             </h1>
             <div id="picture">
-                <img src="{{ STATIC_URL }}2012/stickman-400w.png" alt="" width="400" />
+                <img src="{{ STATIC_URL }}2012/stickman-larger.png" alt="" width="400" />
             </div>
             <p class="dates">
                 18 &amp; 19 August 2012
@@ -29,13 +29,37 @@
                     <h2>{{ article.title }}</h2>
                     <dl>
                         <dt>Published</dt>
-                        <dd>{{ article.published }}</dd>
+                        <dd>{{ article.published|date:"j F Y" }}</dd>
                     </dl>
                     {{ article.content|markdown }}
                 </article>
             {% endwith %}
         </section>
+        <section id="what">
+            <h2>What is <span>CAPTION</span>?</h2>
+            <p>
+                <span>Caption</span> is a unique, friendly event that encourages small press creators, manga artists, comic-book readers and professionals to mingle and discuss their work.
+            </p>
+            <ul class="features">
+                <li>
+                    <strong>When is <span>CAPTION</span>?</strong>
+                    18–19 August 2012.
+                    <small>That’s the weekend after the Olympics and before the Paralympics.</small>
+                </li>
+                <li>
+                    <strong>Where is <span>CAPTION</span>?</strong>
+                    East Oxford Community Centre, Princes Street, Oxford <span>OX4 4BB</span>.
+                </li>
+                <li>
+                    <strong>The <span>CAPTION</span> table</strong>
+                    A communal pop-up shop to sell your work, freeing you to
+                    go to talks and workshops.
+                </li>
+            </ul>
+            </p>
+        </section>
         <section id="articles">
+            <h2><span>Caption</span> news</h2>
             <ul>
                 {% for article in articles|slice:"1:" %}
                 <li>
