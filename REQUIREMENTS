@@ -1,4 +1,5 @@
 Django==1.4
 Markdown==2.1.1
+PyYAML==3.10
 distribute==0.6.19
 wsgiref==0.1.2
