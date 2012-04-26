@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^(?P<year>20\d\d)/$', 'articles.views.index', {}, 'article-index'),
     url(r'^(?P<year>20\d\d)/(?P<article_id>\d+)$', 'articles.views.article', {}, 'article-detail'),
     url(r'^(?P<year>20\d\d)/(?P<article_id>\d+)-(?P<slug>[\w-]+)$', 'articles.views.article', {}, 'article-detail'),
+    url(r'^(?P<year>20\d\d)/(?P<info_name>[a-z][\w-]+)$', 'articles.views.info', {}, 'info-detail'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

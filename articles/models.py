@@ -35,3 +35,20 @@ class Article(models.Model):
     class Meta:
         # Reverse chronological order.
         ordering = ('-published', '-created')
+
+
+class Info(models.Model):
+    """An information page, e.g., about the venue."""
+    tags = models.ManyToManyField(Tag)
+
+    name = models.SlugField(help_text='Internal name used in the URL')
+    title = models.CharField(max_length=200, unique_for_year='published')
+    summary = models.TextField(blank=True, help_text='Shown on the front page linking to the main content. Blank means not shown on the front page.')
+    content = models.TextField(blank=True, help_text='Shown on the info page. Blank means there is no separate info page.')
+
+    published = models.DateTimeField(blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True, editable=False)
+    updated = models.DateTimeField(auto_now=True, editable=False)
+
+    def __unicode__(self):
+        return self.title

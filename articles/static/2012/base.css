@@ -59,15 +59,38 @@ ul.features li {
     list-style-type: none;
 }
 
-ul.features strong,
-ul.features small {
-    display: block;
-}
-ul.features small {
-    font-size: 0.8em;
-    margin-top: 0.5em;
+
+ul.features h3 {
+    font-size: 1em;
+    margin: 0;
 }
 
+ul.features p {
+    margin: 0;
+    width: auto;
+}
+ul.features small,
+ul.features b {
+    font-size: 0.8em;
+    display: block;
+    margin-top: 0.5em;
+}
+ul.features b {
+    text-align: right;
+}
+
+ul.features a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+ul.features a:hover h3,
+ul.features a:active h3 ,
+ul.features a:hover b,
+ul.features a:active b {
+    text-decoration: underline;
+    color: #932;
+}
 
 
 /* DL elements go in articles  to the right of the text */

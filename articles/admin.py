@@ -1,5 +1,5 @@
 from django.contrib import admin
-from articles.models import Article, Tag
+from articles.models import Article, Info, Tag
 
 class ArticleAdmin(admin.ModelAdmin):
     date_hierarchy = 'published'
@@ -7,5 +7,10 @@ class ArticleAdmin(admin.ModelAdmin):
     list_filter = ('tags',)
     prepopulated_fields = {"slug": ("title",)}
 
+class InfoAdmin(admin.ModelAdmin):
+    list_display = ('name', 'title', 'published')
+    list_filter = ('tags',)
+
 admin.site.register(Article, ArticleAdmin)
+admin.site.register(Info, InfoAdmin)
 admin.site.register(Tag)

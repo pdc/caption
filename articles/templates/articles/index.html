@@ -39,20 +39,20 @@
                 <span>Caption</span> is a unique, friendly event that encourages small press creators, manga artists, comic-book readers and professionals to mingle and discuss their work.
             </p>
             <ul class="features">
+                {% for info in infos %}
                 <li>
-                    <strong>When</strong>
-                    18–19 August 2012.
-                    <small>That’s the weekend after the Olympics and before the Paralympics.</small>
+                    {% if info.content %}
+                    <a href="{% url info-detail year=year info_name=info.name %}">
+                        <h3>{{ info.title }}</h3>
+                        {{ info.summary|markdown }}
+                        <b>Read more ></b>
+                    </a>
+                    {% else %}
+                    <h3>{{ info.title }}</h3>
+                    {{ info.summary|markdown }}
+                    {% endif %}
                 </li>
-                <li>
-                    <strong>Where</strong>
-                    East Oxford Community Centre, Princes Street, Oxford <span>OX4 4BB</span>.
-                </li>
-                <li>
-                    <strong>The <span>CAPTION</span> table</strong>
-                    A communal pop-up shop to sell your work, freeing you to
-                    go to talks and workshops.
-                </li>
+                {% endfor %}
             </ul>
             </p>
         </section>

@@ -4,7 +4,7 @@ from datetime import datetime
 from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render, redirect, get_object_or_404
-from articles.models import Article, Tag
+from articles.models import Article, Info, Tag
 
 def with_template(template_name):
     def view_decorator(view):
@@ -25,8 +25,10 @@ def index(request, year):
         year = datetime.now().year
     tags = [get_object_or_404(Tag, name=year)]
     articles =  tags[0].article_set.all()
+    infos = tags[0].info_set.all()
     return {
         'articles': articles,
+        'infos': infos,
         'year': tags[0],
         'tags': tags,
     }
@@ -34,11 +36,25 @@ def index(request, year):
 @with_template('articles/article.html')
 def article(request, year, article_id, slug=None):
     tags = [get_object_or_404(Tag, name=year)]
+    infos = tags[0].info_set.all()
     article =  get_object_or_404(Article, id=article_id)
     if article.slug != slug:
         return redirect(article, year=year, article_id=article.id, slug=article.slug)
     return {
         'article': article,
+        'infos': infos,
+        'year': tags[0],
+        'tags': tags,
+    }
+
+@with_template('articles/info.html')
+def info(request, year, info_name, slug=None):
+    tags = [get_object_or_404(Tag, name=year)]
+    infos = tags[0].info_set.all()
+    info =  get_object_or_404(Info, name=info_name)
+    return {
+        'info': info,
+        'infos': infos,
         'year': tags[0],
         'tags': tags,
     }
