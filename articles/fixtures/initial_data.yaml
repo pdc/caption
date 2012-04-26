@@ -1,0 +1,35 @@
+-   fields: {name: '2012'}
+    model: articles.tag
+    pk: 1
+-   fields:
+        author: 1
+        content: "Vestibulum quam sapien, dignissim non lobortis eu, vestibulum eu\
+            \ turpis. Suspendisse vehicula, justo sed ultricies dictum, metus massa\
+            \ congue elit, non lacinia tortor justo ac <span>nulla</span>. \r\n\r\n\
+            Cras sodales, neque sed ultrices sagittis, _diam justo_ scelerisque lectus,\
+            \ quis blandit nunc erat sed eros. In ut ligula nec ante semper adipiscing.\
+            \ Integer sit amet odio sapien. \r\n\r\nFusce ut erat sapien. Praesent\
+            \ quis augue lectus, scelerisque scelerisque elit. Nulla non velit dolor,\
+            \ ac convallis lorem. Nunc sollicitudin aliquet nisl ut hendrerit. Sed\
+            \ eget semper libero. Aliquam tincidunt tellus id nulla adipiscing mollis."
+        created: 2012-04-24 07:42:45.575990+00:00
+        published: 2012-04-24 07:42:41+00:00
+        slug: lorem-ipsum-dolor-sit-amet
+        tags: [1]
+        title: Lorem ipsum dolor sit amet
+        updated: 2012-04-24 07:42:45.576027+00:00
+    model: articles.article
+    pk: 2
+-   fields:
+        author: 1
+        content: "Oxford\u2019s annual comics convention CAPTION returns on the weekend\
+            \ of 18 and 19 August 2012.\r\n\r\nJust in case you were wondering, that\u2019\
+            s the weekend *after* the Olympics and *before* the Paralympics."
+        created: 2012-04-22 16:24:25.942535+00:00
+        published: 2012-04-22 16:24:23+00:00
+        slug: mark-your-calendar
+        tags: [1]
+        title: Mark Your Calendar
+        updated: 2012-04-22 16:24:25.942568+00:00
+    model: articles.article
+    pk: 1
