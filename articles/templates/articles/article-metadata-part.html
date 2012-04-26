@@ -1,0 +1,12 @@
+
+                    <dl>
+                        <dt>Author</dt>
+                        <dd>{{ article.author }}</dd>
+                        <dt>Published</dt>
+                        <dd>
+                            <a href="{% url article-detail article_id=article.id year=article.year slug=article.slug %}">
+                                {{ article.published|date:"j F Y" }}
+                                <b>#</b>
+                            </a>
+                        </dd>
+                    </dl>

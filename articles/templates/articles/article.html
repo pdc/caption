@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        <title>{{ article.title }} - CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}</title>
-    </head>
-    <body>
-        <p><a href="{% url article-index year=year %}">{{ year }}</a></p>
-        <h1>{{ article.title }}</h1>
-        {{ article.content|markdown:"safe" }}
-    </body>
-</html>
+{% extends "articles/base.html" %}
+{% load markup %}
+
+{% block title %}{{ article.title }} - CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}{% endblock %}
+
+{% block main %}
+        <section id="article">
+            <h1>{{ article.title }}</h1>
+            {% include "articles/article-metadata-part.html" %}
+            {{ article.content|markdown }}
+        </saection>
+{% endblock %}

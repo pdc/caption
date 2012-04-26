@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/base.css">
+        {% block morestyle %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/inner.css">
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+        <header>
+            <p class="logo">
+                <a href="{% url article-index year=year %}">
+                    <b>Caption</b>
+                    <i>Summer Special</i>
+                </a>
+            </p>
+            <div id="picture">
+                <img src="{{ STATIC_URL }}2012/stickman-letterpress-100x130.png" alt="" width="100" height="130" />
+            </div>
+            <p class="dates-and-venue">
+                18 &amp; 19 August 2012<br>
+                East Oxford Community Centre
+            </p>
+        </header>
+        {% endblock %}
+        <div id="main">
+            {% block main %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
+
 class Tag(models.Model):
     name = models.CharField(max_length=200, unique=True, db_index=True)
 
@@ -23,5 +25,13 @@ class Article(models.Model):
     def __unicode__(self):
         return self.title
 
+    def year(self):
+        """The CAPTION year this article relates to."""
+        for tag in self.tags.all():
+            if tag.name.startswith('20'):
+                return tag.name
+        return str(published.year)
+
     class Meta:
+        # Reverse chronological order.
         ordering = ('-published', '-created')

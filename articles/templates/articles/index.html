@@ -1,20 +1,19 @@
+{% extends "articles/base.html" %}
 {% load markup %}
-<!DOCTYPE html>
-<html lang="en-GB">
-    <head>
-        <meta charset="UTF-8">
-        <title>CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}</title>
-        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/base.css">
+
+{% block title %}CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}{% endblock %}
+{% block morestyle %}
         <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/front.css">
-    </head>
-    <body>
+{% endblock %}
+
+{% block header %}
         <header>
             <h1>
                 <b>Caption</b>
                 <i>Summer Special</i>
             </h1>
             <div id="picture">
-                <img src="{{ STATIC_URL }}2012/stickman-larger.png" alt="" width="400" />
+                <img src="{{ STATIC_URL }}2012/stickman-letterpress.png" alt="" width="400" />
             </div>
             <p class="dates">
                 18 &amp; 19 August 2012
@@ -23,31 +22,30 @@
                 East Oxford Community Centre
             </p>
         </header>
+{% endblock %}
+{% block main %}
         <section id="article">
             {% with article=articles|first %}
                 <article>
                     <h2>{{ article.title }}</h2>
-                    <dl>
-                        <dt>Published</dt>
-                        <dd>{{ article.published|date:"j F Y" }}</dd>
-                    </dl>
+                    {% include "articles/article-metadata-part.html" %}
                     {{ article.content|markdown }}
                 </article>
             {% endwith %}
         </section>
         <section id="what">
-            <h2>What is <span>CAPTION</span>?</h2>
+            <h2>What  is <span>CAPTION</span>?</h2>
             <p>
                 <span>Caption</span> is a unique, friendly event that encourages small press creators, manga artists, comic-book readers and professionals to mingle and discuss their work.
             </p>
             <ul class="features">
                 <li>
-                    <strong>When is <span>CAPTION</span>?</strong>
+                    <strong>When</strong>
                     18–19 August 2012.
                     <small>That’s the weekend after the Olympics and before the Paralympics.</small>
                 </li>
                 <li>
-                    <strong>Where is <span>CAPTION</span>?</strong>
+                    <strong>Where</strong>
                     East Oxford Community Centre, Princes Street, Oxford <span>OX4 4BB</span>.
                 </li>
                 <li>
@@ -68,5 +66,4 @@
                 {% endfor %}
             </ul>
         </section>
-    </body>
-</html>
+{% endblock %}
