@@ -12,12 +12,12 @@
             \ quis augue lectus, scelerisque scelerisque elit. Nulla non velit dolor,\
             \ ac convallis lorem. Nunc sollicitudin aliquet nisl ut hendrerit. Sed\
             \ eget semper libero. Aliquam tincidunt tellus id nulla adipiscing mollis."
-        created: 2012-04-24 07:42:45.575990+00:00
-        published: 2012-04-24 07:42:41+00:00
+        created: 2012-04-24 06:42:45.575990+00:00
+        published: 2012-04-24 06:42:41+00:00
         slug: lorem-ipsum-dolor-sit-amet
         tags: [1]
         title: Lorem ipsum dolor sit amet
-        updated: 2012-04-24 07:42:45.576027+00:00
+        updated: 2012-04-24 06:42:45.576027+00:00
     model: articles.article
     pk: 2
 -   fields:
@@ -25,11 +25,60 @@
         content: "Oxford\u2019s annual comics convention CAPTION returns on the weekend\
             \ of 18 and 19 August 2012.\r\n\r\nJust in case you were wondering, that\u2019\
             s the weekend *after* the Olympics and *before* the Paralympics."
-        created: 2012-04-22 16:24:25.942535+00:00
-        published: 2012-04-22 16:24:23+00:00
+        created: 2012-04-22 15:24:25.942535+00:00
+        published: 2012-04-22 15:24:23+00:00
         slug: mark-your-calendar
         tags: [1]
         title: Mark Your Calendar
-        updated: 2012-04-22 16:24:25.942568+00:00
+        updated: 2012-04-22 15:24:25.942568+00:00
     model: articles.article
     pk: 1
+-   fields:
+        content: "CAPTION will once again be at the [East Oxford Community Centre][1],\
+            \ on the corner of Princes Street and Cowley Road in Oxford.\r\n\r\n##\
+            \ Foods and Drink\r\n\r\nThere is a bar at the venue, which will be open\
+            \ from 12 noon on each day.\r\n\r\nThe venue does not sell food, but there\
+            \ a wide range of restaurants and take-aways, to suit all tastes and purses,\
+            \ on Cowley Road.\r\n\r\n\r\n\r\n\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre"
+        created: 2012-04-26 18:13:35.791691+00:00
+        name: venue
+        published: 2012-04-26 18:13:27+00:00
+        summary: East Oxford Community Centre, Princes Street, Oxford OX4 4BB.
+        tags: [1]
+        title: Where
+        updated: 2012-04-26 18:24:31.849223+00:00
+    model: articles.info
+    pk: 1
+-   fields:
+        content: ''
+        created: 2012-04-26 18:15:30.570190+00:00
+        name: dates
+        published: 2012-04-26 18:14:23+00:00
+        summary: "18\u201319 August 2012.\r\n<small>That\u2019s the weekend after\
+            \ the Olympics and before the Paralympics.</small>"
+        tags: [1]
+        title: When
+        updated: 2012-04-26 18:15:30.570224+00:00
+    model: articles.info
+    pk: 2
+-   fields:
+        content: "We want you to be free to join in panels and workshops, so instead\
+            \ of renting out individual tables we have the CAPTION table, run by CAPTION\
+            \ gofers. You can leave your minicomics on the table in the morning and\
+            \ in the evening collect the unsold copies and the money for the sold\
+            \ copies minus 10%.\r\n\r\n[![(photo)](http://caption.org/2009/table-by-jinty-on-flickr.jpeg)](http://www.flickr.com/photos/jinty/1104947070/)\r\
+            \nPhoto by Jenni Scott\r\n\r\nThe reason for this unusual system is that\
+            \ we tried having a full-on dealers\u2019 room at one of the first CAPTIONs\
+            \ and it was not much fun because our friends were trapped behind their\
+            \ tables the whole day. (There are a couple of other tables, but they\
+            \ are special cases.)"
+        created: 2012-04-26 18:17:59.060427+00:00
+        name: table
+        published: 2012-04-26 18:17:50+00:00
+        summary: A communal pop-up shop to sell your work, freeing you to go to talks
+            and workshops.
+        tags: [1]
+        title: The CAPTION table
+        updated: 2012-04-26 18:17:59.060464+00:00
+    model: articles.info
+    pk: 3
