@@ -6,10 +6,14 @@ This is the third version of [caption.org][] – the first two were a completely
 
 ## Plan
 
-The plan is to complete the brochure for CAPTION 2012, then create an app for
-recycling the Drupal content (or otherwise convert the old site to work with
-the new one), and then link in the archives of old CAPTIONs so that history is
-properly preserved.
+* Complete the brochure for CAPTION 2012.
+
+* Deploy to <http://caption.org/>.
+
+* Create an app for recycling the Drupal content (or otherwise convert the
+old site to work with the new one).
+
+* Link in the archives of old CAPTIONs so that history is properly preserved.
 
 ## Status
 
