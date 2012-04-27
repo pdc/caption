@@ -45,6 +45,7 @@ class Info(models.Model):
     title = models.CharField(max_length=200, unique_for_year='published')
     summary = models.TextField(blank=True, help_text='Shown on the front page linking to the main content. Blank means not shown on the front page.')
     content = models.TextField(blank=True, help_text='Shown on the info page. Blank means there is no separate info page.')
+    sequence = models.IntegerField(blank=True, default=0, help_text='Controls the otrder of info items.')
 
     published = models.DateTimeField(blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, editable=False)
@@ -52,3 +53,7 @@ class Info(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    class Meta:
+        # Reverse chronological order.
+        ordering = ('sequence', 'created')

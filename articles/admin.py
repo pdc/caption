@@ -8,7 +8,8 @@ class ArticleAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
 
 class InfoAdmin(admin.ModelAdmin):
-    list_display = ('name', 'title', 'published')
+    list_display = ('name', 'title', 'sequence', 'published')
+    list_editable = ('title', 'sequence')
     list_filter = ('tags',)
 
 admin.site.register(Article, ArticleAdmin)
