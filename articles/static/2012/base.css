@@ -14,7 +14,7 @@ body {
 
 section {
     float: left;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 article {
@@ -76,7 +76,7 @@ ul.features b {
     margin-top: 0.5em;
 }
 ul.features b {
-    text-align: right;
+    /* text-align: right; */
 }
 
 ul.features a {
@@ -84,8 +84,6 @@ ul.features a {
     text-decoration: none;
     color: inherit;
 }
-ul.features a:hover h3,
-ul.features a:active h3 ,
 ul.features a:hover b,
 ul.features a:active b {
     text-decoration: underline;

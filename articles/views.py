@@ -3,6 +3,7 @@
 from datetime import datetime
 from django.http import HttpResponse
 from django.template import RequestContext
+from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect, get_object_or_404
 from articles.models import Article, Info, Tag
 
@@ -16,7 +17,6 @@ def with_template(template_name):
             return render(request, template_name, template_vars)
         return decorated_view
     return view_decorator
-
 
 
 @with_template('articles/index.html')
@@ -35,13 +35,17 @@ def index(request, year):
 
 @with_template('articles/article.html')
 def article(request, year, article_id, slug=None):
-    tags = [get_object_or_404(Tag, name=year)]
-    infos = tags[0].info_set.all()
     article =  get_object_or_404(Article, id=article_id)
     if article.slug != slug:
         return redirect(article, year=year, article_id=article.id, slug=article.slug)
+    article_url = request.build_absolute_uri(
+        reverse('article-detail',
+            kwargs={'year': year, 'article_id': article.id, 'slug': article.slug}))
+    tags = [get_object_or_404(Tag, name=year)]
+    infos = tags[0].info_set.all()
     return {
         'article': article,
+        'article_url': article_url,
         'infos': infos,
         'year': tags[0],
         'tags': tags,
