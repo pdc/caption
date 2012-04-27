@@ -27,15 +27,19 @@
     pk: 2
 -   fields:
         author: 1
-        content: "Oxford\u2019s annual comics convention CAPTION returns on the weekend\
-            \ of 18 and 19 August 2012.\r\n\r\nJust in case you were wondering, that\u2019\
-            s the weekend *after* the Olympics and *before* the Paralympics."
+        content: "Oxford\u2019s annual comics convention <span>CAPTION</span>\r\n\
+            returns on the weekend of 18 and 19 August 2012. The theme is **<span>CAPTION</span>\
+            \ Summer Special**.\r\n\r\nJust in case you were wondering, that\u2019\
+            s the weekend *after* the Olympics and *before* the Paralympics.\r\n\r\
+            \n<small>Please ignore any previous dates we may have given for <span>CAPTION</span>\
+            \ 2012. \r\nIt took us a couple of goes to find a weekend that did not\
+            \ clash with too many other events.</small>"
         created: 2012-04-22 14:24:25.942535+00:00
         published: 2012-04-22 14:24:23+00:00
         slug: mark-your-calendar
         tags: [1]
         title: Mark Your Calendar
-        updated: 2012-04-22 14:24:25.942568+00:00
+        updated: 2012-04-27 14:35:19.081838+00:00
     model: articles.article
     pk: 1
 -   fields:
@@ -90,3 +94,23 @@
         updated: 2012-04-27 14:18:50.090360+00:00
     model: articles.info
     pk: 3
+-   fields:
+        content: "<a href=\"http://www.flickr.com/groups/captioncomicsconvention/\"\
+            ><img src=\"http://farm6.staticflickr.com/5166/5355467340_c29b21085c_q.jpg\"\
+            \ alt=\"\"> \r\n<img src=\"http://farm5.staticflickr.com/4082/4854176433_2f51f0bcca_q.jpg\"\
+            \ alt=\"\">\r\n<img src=\"http://farm5.staticflickr.com/4097/4853382628_70f07cdaab_q.jpg\"\
+            \ alt=\"\"></a>\r\n\r\nBehold pictures from the <span>CAPTION</span> events\
+            \ from the past! This the official group for posting images related to\
+            \ <span>CAPTION</span>s past, present and future.\r\n\r\nYou too can join\
+            \ send photos to the pool. When adding images please tag them with which\
+            \ year they are related to e.g. \"caption 2012\"."
+        created: 2012-04-27 16:11:43.067541+00:00
+        name: flickr
+        published: 2012-04-27 16:11:40+00:00
+        sequence: 99
+        summary: '![Photo](http://farm5.staticflickr.com/4082/4854176433_2f51f0bcca_t.jpg)]'
+        tags: [1]
+        title: Flickr pool
+        updated: 2012-04-27 16:16:14.483929+00:00
+    model: articles.info
+    pk: 4
