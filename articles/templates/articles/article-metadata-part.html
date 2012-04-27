@@ -1,12 +1,14 @@
 
                     <dl>
+                        {% if article.author.id != 1 %}
                         <dt>Author</dt>
                         <dd>{{ article.author }}</dd>
+                        {% endif %}
                         <dt>Published</dt>
                         <dd>
                             <a href="{% url article-detail article_id=article.id year=article.year slug=article.slug %}">
                                 {{ article.published|date:"j F Y" }}
-                                <b>#</b>
+                                <u>#</u>
                             </a>
                         </dd>
                     </dl>
