@@ -43,9 +43,11 @@ def article(request, year, article_id, slug=None):
             kwargs={'year': year, 'article_id': article.id, 'slug': article.slug}))
     tags = [get_object_or_404(Tag, name=year)]
     infos = tags[0].info_set.all()
+    articles =  tags[0].article_set.all()
     return {
         'article': article,
         'article_url': article_url,
+        'articles': articles,
         'infos': infos,
         'year': tags[0],
         'tags': tags,
@@ -56,9 +58,11 @@ def info(request, year, info_name, slug=None):
     tags = [get_object_or_404(Tag, name=year)]
     infos = tags[0].info_set.all()
     info =  get_object_or_404(Info, name=info_name)
+    articles =  tags[0].article_set.all()
     return {
         'info': info,
         'infos': infos,
+        'articles': articles,
         'year': tags[0],
         'tags': tags,
     }

@@ -12,13 +12,42 @@ body {
         #FDFFD7 url(paper.jpeg) left top repeat-x;
 }
 
+p a:link,
+p a:visited {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #932;
+    border-color: rgba(153, 51, 34, 0.5);
+}
+p a:hover,
+p:active {
+    color: #932;
+    border-color: #932;
+}
+
+#main {
+    float: left;
+    width: 720px; /* 9u */
+}
+
 section {
     float: left;
     margin: 20px 0 0;
 }
 
+#asides {
+    float: left;
+    margin: 20px 0 0;
+    width: 240px; /* 3 u */
+}
+
+aside {
+    width: 240px;
+    margin: 0 0 20px;
+}
+
 article {
-    width: 640px; /* 78u */
+    width: 640px; /* 8u */
 }
 
 section h2,
@@ -27,16 +56,18 @@ section ul {
     width: 460px; /* 6 u - gutter */
 }
 
-section h2 {
+section h2,
+aside h2 {
     margin: 0 10px 0.5em 10px;
 }
 
 section p {
-    margin: 0 170px 1.25em 10px;
+    margin: 0 10px 1.25em 10px;
 }
 
-section ul {
-    margin: 0;
+section ul,
+aside ul {
+    margin: 0 10px;
     padding: 0;
 }
 
@@ -70,7 +101,8 @@ ul.features p {
     width: auto;
 }
 ul.features small,
-ul.features b {
+ul.features b,
+aside nav b {
     font-size: 0.8em;
     display: block;
     margin-top: 0.5em;
@@ -135,9 +167,60 @@ section dd a:active u {
 }
 
 /* SPAN in sections is used for all-caps abbreviations */
-section span {
+section span,
+aside span {
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+aside {
+    font-size: 0.8em;
+}
+
+aside table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+aside td {
+    padding: 0 10px;
+    margin: 0;
+}
+
+aside td.date {
+    width: 60px;
+}
+
+aside ul a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+aside ul {
+    margin: 0 10px;
+}
+aside ul li {
+    margin: 0.625em 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+aside ul h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+aside ul a:hover b,
+aside ul a:active b {
+    text-decoration: underline;
+    color: #932;
+}
+
+aside ul p,
+aside ul b {
+    margin: 0;
 }
 
