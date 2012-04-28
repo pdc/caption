@@ -43,20 +43,74 @@ h1 i {
 }
 
 #article {
+    width: 640px;
 }
 
 article {
-    width: 640px;
     -webkit-column-count: 2;
     -webkit-column-gap: 0;
     column-count: 2;
     column-gap: 0;
 }
 
-article p,
-#article h2 {
+article p {
     width: auto;
 }
+#article p.above-heading {
+    margin: 0 10px;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+}
+#article h2 {
+    width: auto;
+    margin: 0 10px;
+}
+
+section dl {
+    font-size: 0.7em;
+    width: 640px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+section dt {
+    margin: 0 10px;
+}
+
+@media screen {
+    dt {
+        display: none;
+    }
+}
+
+section dd {
+    float: left;
+    width: 140px;
+    margin: 0 10px 0.625em;
+    color: #666;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+section dd a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section dd a u {
+    color: rgba(153, 51, 34, 0.5);
+    text-decoration: none;
+}
+
+section dd a:hover,
+section dd a:active,
+section dd a:hover u,
+section dd a:active u {
+    text-decoration: underline;
+    color: #932;
+}
+
 
 /*
 * Overrides for screen widths.
@@ -83,26 +137,26 @@ article p,
         width: 400px;
     }
 
-    article {
+    #article {
         width: 640px;
     }
 }
 
 @media screen and (min-width: 1180px) {
-    article {
+    #article {
         width: 720px;
     }
 }
 
 @media screen and (min-width: 1260px) {
-    article {
+    #article  {
         width: 800px;
     }
 }
 
 /* Smaller than default scrteens get smaller logo */
 @media screen and (max-width: 980px) {
-    article {
+    #article  {
         width: 480px;
     }
 }
@@ -129,8 +183,10 @@ article p,
 }
 
 @media screen and (max-width: 740px) {
-    article {
+    #article  {
         width: 320px;
+    }
+    article {
         -webkit-column-count: 1;
         column-count: 1;
     }

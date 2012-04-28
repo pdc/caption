@@ -71,3 +71,47 @@ section h1 {
     font-size: 2em;
     margin: 0 10px 0.5em;
 }
+
+
+/* DL elements go in articles  to the right of the text */
+section dl {
+    font-size: 0.7em;
+    float: right;
+    width: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+section dt {
+    margin: 0 10px;
+}
+
+@media screen {
+    dt {
+        display: none;
+    }
+}
+
+section dd {
+    margin: 0 10px 0.625em;
+    color: #333;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+section dd a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section dd a u {
+    color: rgba(153, 51, 34, 0.5);
+    text-decoration: none;
+}
+
+section dd a:hover,
+section dd a:active,
+section dd a:hover u,
+section dd a:active u {
+    text-decoration: underline;
+    color: #932;
+}

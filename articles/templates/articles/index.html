@@ -19,10 +19,11 @@
 {% endblock %}
 {% block main %}
         <section id="article">
+            <p class="above-heading">Latest news</p>
             {% with article=articles|first %}
                 <h2>{{ article.title }}</h2>
+                {% include "articles/article-metadata-part.html" %}
                 <article>
-                    {% include "articles/article-metadata-part.html" %}
                     {{ article.content|markdown }}
                 </article>
             {% endwith %}
@@ -30,7 +31,7 @@
         <section id="what">
             <h2>What  is <span>CAPTION</span>?</h2>
             <p>
-                <span>Caption</span> is a unique, friendly event that encourages small press creators, manga artists, comic-book readers and professionals to mingle and discuss their work.
+                Oxford’s annual small-press comics convention is a unique, friendly event that brings comics creators, manga artists, comic-book readers and professionals together to mingle and discuss their work.
             </p>
             <ul class="features">
                 {% for info in infos %}
