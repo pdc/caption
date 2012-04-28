@@ -5,8 +5,18 @@
 
 {% block main %}
         <section id="article">
-            <h1>{{ article.title }}</h1>
-            {% include "articles/article-metadata-part.html" %}
-            {{ article.content|markdown }}
-        </saection>
+            <article>
+                <h1>{{ article.title }}</h1>
+                {% include "articles/article-metadata-part.html" %}
+                {{ article.content|markdown }}
+            </article>
+        </section>
+{% endblock %}
+{% block asides %}
+        <aside id="article-list">
+            {% include "articles/article-list-part.html" %}
+        </aside>
+        <aside id="info-list">
+            {% include "articles/info-list-part.html" %}
+        </aside>
 {% endblock %}

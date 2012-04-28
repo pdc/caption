@@ -9,3 +9,11 @@
             {{ info.content|markdown }}
         </saection>
 {% endblock %}
+{% block asides %}
+        <aside id="info-list">
+            {% include "articles/info-list-part.html" %}
+        </aside>
+        <aside id="article-list">
+            {% include "articles/article-list-part.html" %}
+        </aside>
+{% endblock %}

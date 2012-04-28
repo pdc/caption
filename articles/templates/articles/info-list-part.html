@@ -1,0 +1,25 @@
+{% load markup %}
+            <nav>
+                <h2><span>Caption</span> info</h2>
+                <ul>
+                    {% for info in infos %}
+                    <li>
+                        {% if info.content %}
+                        <a href="{% url info-detail year=year.name info_name=info.name %}">
+                            <h3>
+                                {{ info.title }}
+                            </h3>
+                            {{ info.summary|markdown }}
+                            <b>read more ></b>
+                        </a>
+                        {% else %}
+                        <h3>
+                            {{ info.title }}
+                            {% if info.content %}>{% endif %}
+                        </h3>
+                        {{ info.summary|markdown }}
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>

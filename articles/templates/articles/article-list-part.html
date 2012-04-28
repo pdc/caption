@@ -1,0 +1,20 @@
+
+            <nav id="articles-nav">
+                <h2><span>Caption</span> news</h2>
+                <table summary="A table of articles and the dates they were published.">
+                    <tbody>
+                        {% for other_article in articles %}
+                        <tr>
+                            <td class="date">{{ other_article.published|date:"j N" }}</td>
+                            <td class="title">
+                                {% if article and other_article.id == article.id %}
+                                <strong>{{ other_article.title }}</strong>
+                                {% else %}
+                                <a href="{% url article-detail article_id=other_article.id year=year slug=other_article.slug %}">{{ other_article.title }}</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </nav>

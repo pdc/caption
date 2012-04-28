@@ -15,19 +15,13 @@
             <div id="picture">
                 <img src="{{ STATIC_URL }}2012/stickman-letterpress.png" alt="" width="400" />
             </div>
-            <p class="dates">
-                18 &amp; 19 August 2012
-            </p>
-            <p class="venue">
-                East Oxford Community Centre
-            </p>
         </header>
 {% endblock %}
 {% block main %}
         <section id="article">
             {% with article=articles|first %}
+                <h2>{{ article.title }}</h2>
                 <article>
-                    <h2>{{ article.title }}</h2>
                     {% include "articles/article-metadata-part.html" %}
                     {{ article.content|markdown }}
                 </article>
@@ -56,14 +50,9 @@
             </ul>
             </p>
         </section>
-        <section id="articles">
-            <h2><span>Caption</span> news</h2>
-            <ul>
-                {% for article in articles|slice:"1:" %}
-                <li>
-                    <a href="{% url article-detail article_id=article.id year=year slug=article.slug %}">{{ article.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </section>
+{% endblock %}
+{% block asides %}
+        <aside id="articles">
+            {% include "articles/article-list-part.html" %}
+        </aside>
 {% endblock %}
