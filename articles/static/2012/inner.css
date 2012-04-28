@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 header {
     float: left;
     width: 100%;
@@ -67,11 +71,22 @@ header p.dates-and-venue {
     margin: 0 auto;
 }
 
+#sections, #asides {
+    float: left;
+}
+
+aside {
+    float: left;
+}
+
+#info p {
+    width: 540px;
+}
+
 section h1 {
     font-size: 2em;
     margin: 0 10px 0.5em;
 }
-
 
 /* DL elements go in articles  to the right of the text */
 section dl {
@@ -114,4 +129,19 @@ section dd a:hover u,
 section dd a:active u {
     text-decoration: underline;
     color: #932;
+}
+
+@media screen and (min-width: 1240px) {
+    #main {
+        width: 1200px; /* 15u */
+    }
+    #asides {
+        width: 480px; /* 6u */
+    }
+}
+
+@media screen and (min-width: 1480px) {
+    #main {
+        width: 1440px; /* 18u */
+    }
 }

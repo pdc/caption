@@ -25,11 +25,6 @@ p:active {
     border-color: #932;
 }
 
-#main {
-    float: left;
-    width: 720px; /* 9u */
-}
-
 section {
     float: left;
     margin: 20px 0 0;
