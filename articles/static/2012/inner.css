@@ -75,6 +75,10 @@ header p.dates-and-venue {
     float: left;
 }
 
+article {
+    width: 640px; /* 8u */
+}
+
 aside {
     float: left;
 }

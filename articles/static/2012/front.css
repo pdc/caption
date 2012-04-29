@@ -45,8 +45,12 @@ h1 i {
 #article {
     width: 640px;
 }
+#what {
+    width: 320px;
+}
 
 article {
+    width: 100%;
     -webkit-column-count: 2;
     -webkit-column-gap: 0;
     column-count: 2;
@@ -111,6 +115,13 @@ section dd a:active u {
     color: #932;
 }
 
+#what p {
+    width: auto;
+}
+
+#what ul {
+    width: 100%;
+}
 
 /*
 * Overrides for screen widths.
@@ -146,11 +157,20 @@ section dd a:active u {
     #article {
         width: 720px;
     }
+    #what {
+        width: 480px;
+    }
 }
 
 @media screen and (min-width: 1260px) {
     #article  {
         width: 800px;
+    }
+    #what {
+        width: 800px;
+    }
+    #what>p {
+        width: 540px;
     }
 }
 
@@ -158,6 +178,14 @@ section dd a:active u {
 @media screen and (max-width: 980px) {
     #article  {
         width: 480px;
+    }
+    article {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    #what {
+        clear: left;
+        width: 560px;
     }
 }
 
@@ -180,14 +208,16 @@ section dd a:active u {
     #picture img {
         width: 220px;
     }
+    #what {
+        width: 480px;
+    }
 }
 
 @media screen and (max-width: 740px) {
     #article  {
         width: 320px;
     }
-    article {
-        -webkit-column-count: 1;
-        column-count: 1;
+    #what {
+        width: 320px;
     }
 }
