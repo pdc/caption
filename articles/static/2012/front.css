@@ -21,20 +21,26 @@ h1 {
 
 h1 b {
     display: block;
-    font-size: 56px;
+    font-size: 58px;
+
     line-height: 45px;
     font-weight: normal;
+    text-align: center;
 }
 
 h1 i {
     display: block;
-    font-size: 27px;
+    font-size: 28px;
+
     line-height: 23px;
     font-style: normal;
+    text-align: center;
 }
 
 #picture img {
     width: 300px;
+
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
 }
 
 #main {
@@ -195,11 +201,11 @@ section dd a:active u {
         margin: 20px 10px;
     }
     h1 b {
-        font-size: 37px;
+        font-size: 42px;
         line-height: 30px;
     }
     h1 i {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 15px;
     }
     header p {

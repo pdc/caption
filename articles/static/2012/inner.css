@@ -54,8 +54,9 @@ header p.logo i {
 header img {
     float: left;
     display: block;
+    margin: 4px 0;
 
-    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
 }
 
 header p.dates-and-venue {
