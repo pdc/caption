@@ -56,22 +56,60 @@
     model: articles.info
     pk: 2
 -   fields:
-        content: "CAPTION will once again be at the [East Oxford Community Centre][1],\
-            \ on the corner of Princes Street and Cowley Road in Oxford.\r\n\r\n##\
-            \ Foods and Drink\r\n\r\nThere is a bar at the venue, which will be open\
-            \ from 12 noon on each day.\r\n\r\nThe venue does not sell food, but there\
-            \ a wide range of restaurants and take-aways, to suit all tastes and purses,\
-            \ on Cowley Road.\r\n\r\n\r\n\r\n\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre"
+        content: "<iframe width=\"540\" height=\"350\" frameborder=\"0\" scrolling=\"\
+            no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.co.uk/maps/ms?msa=0&amp;msid=205519939268716807203.00046ccb3e49d65cc8741&amp;ie=UTF8&amp;t=m&amp;ll=51.750839,-1.252356&amp;spn=0.018598,0.046349&amp;z=14&amp;output=embed\"\
+            ></iframe><br /><small>View <a href=\"http://maps.google.co.uk/maps/ms?msa=0&amp;msid=205519939268716807203.00046ccb3e49d65cc8741&amp;ie=UTF8&amp;t=m&amp;ll=51.750839,-1.252356&amp;spn=0.018598,0.046349&amp;z=14&amp;source=embed\"\
+            \ style=\"color:#0000FF;text-align:left\">CAPTION at the  East Oxford\
+            \ Community Centre</a> in a larger map</small>\r\n\r\n<span>CAPTION</span>\
+            \ will once again be at the [East Oxford Community Centre][1], on the\
+            \ corner of Princes Street and Cowley Road in Oxford.\r\n\r\n##  Getting\
+            \ here by public transport\r\n\r\nFrom the train station get a number\
+            \ **5** bus. This stops at the stop just outside the Community Centre\
+            \ shown on the map above. Ring the bell when you see a place called \"\
+            Chicken Cottage\" on your left hand side.\r\n\r\nMost coaches stop in\
+            \ Gloucester Green in the middle of Oxford. From there you want to [walk\
+            \ to Queen Street][4] and get a number **1** or number **5** bus. As above,\
+            \ ring the bell when you see a place called \"Chicken Cottage\" on your\
+            \ left hand side.\r\n\r\n[Oxford Tube][5] and [Oxford Bus Company][7]\
+            \ operate [buses to Oxford from London][6] starting from outside Victoria\
+            \ train station. For CAPTION you want the St Clement\u2019s Street stop.\
+            \ \r\n\r\n## Getting here by car\r\n\r\nThe nearest car park is the [Tesco\
+            \ Pay & Display car park on Union Street][2] (parallel to Princes Street).\
+            \ It costs from \xA31 for 2 hours. The next nearest place to park is [St\
+            \ Clement\u2019s Street car park][3] which costs \xA31.80 for 2 hours.\
+            \ Both of these get expensive if you want to stay for more than a few\
+            \ hours.\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre\r\
+            \n  [2]: http://maps.google.co.uk/maps/ms?hl=en&ie=UTF8&msa=0&msid=116195763687370537358.00046ccb3e49d65cc8741&ll=51.750879,-1.238623&spn=0.008914,0.015879&t=h&z=16\r\
+            \n  [3]: http://maps.google.co.uk/maps/ms?hl=en&ie=UTF8&msa=0&msid=116195763687370537358.00046ccb3e49d65cc8741&ll=51.750879,-1.238623&spn=0.008914,0.015879&t=h&z=16\r\
+            \n  [4]: http://maps.google.co.uk/maps?f=d&source=s_d&saddr=51.753871,+-1.262484&daddr=Queen+St,++Oxford&geocode=FY-zFQMdbLzs_w%3B&hl=en&mra=ls&dirflg=w&sll=51.752938,-1.260939&sspn=0.004457,0.007939&ie=UTF8&ll=51.752673,-1.261314&spn=0.004457,0.007939&t=h&z=17\r\
+            \n  [5]: http://www.oxfordtube.com/\r\n  [6]: http://en.wikipedia.org/wiki/Oxford_to_London_coach_route\r\
+            \n  [7]: http://www.oxfordbus.co.uk/main.php?page_id=27"
         created: 2012-04-26 17:13:35.791691+00:00
         name: venue
         published: 2012-04-26 17:13:27+00:00
         sequence: 2
-        summary: East Oxford Community Centre, Princes Street, Oxford OX4 4BB.
+        summary: East Oxford Community Centre, Oxford
         tags: [1]
         title: Where
-        updated: 2012-04-27 14:18:50.072855+00:00
+        updated: 2012-04-29 16:07:22.444094+00:00
     model: articles.info
     pk: 1
+-   fields:
+        content: "There is a bar at the venue, which will be open from 12 noon on\
+            \ each day.\r\n\r\nThe venue does not sell food, but there a wide range\
+            \ of restaurants and take-aways, to suit all tastes and purses, on Cowley\
+            \ Road.\r\n\r\n\r\n\r\n\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre"
+        created: 2012-04-29 15:04:50.113759+00:00
+        name: bar
+        published: 2012-04-29 15:06:54+00:00
+        sequence: 3
+        summary: The bar is open from 12 noon each day, and there are lots of eating
+            opportunities nearby.
+        tags: [1]
+        title: Food & Drink
+        updated: 2012-04-29 15:47:30.426548+00:00
+    model: articles.info
+    pk: 5
 -   fields:
         content: "We want you to be free to join in panels and workshops, so instead\
             \ of renting out individual tables we have the CAPTION table, run by CAPTION\
@@ -86,12 +124,12 @@
         created: 2012-04-26 17:17:59.060427+00:00
         name: table
         published: 2012-04-26 17:17:50+00:00
-        sequence: 3
+        sequence: 4
         summary: A communal pop-up shop to sell your work, freeing you to go to talks
             and workshops.
         tags: [1]
         title: The CAPTION table
-        updated: 2012-04-27 14:18:50.090360+00:00
+        updated: 2012-04-29 15:07:04.629058+00:00
     model: articles.info
     pk: 3
 -   fields:
