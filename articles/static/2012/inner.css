@@ -93,6 +93,10 @@ section h1 {
     margin: 0 10px 0.5em;
 }
 
+section iframe {
+    margin: 0 10px;
+}
+
 /* DL elements go in articles  to the right of the text */
 section dl {
     font-size: 0.7em;

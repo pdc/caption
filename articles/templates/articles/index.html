@@ -56,4 +56,34 @@
         <aside id="articles">
             {% include "articles/article-list-part.html" %}
         </aside>
+        <aside id="tweets">
+            <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 220,
+  height: 280,
+  theme: {
+    shell: {
+      background: '#3a6988',
+      color: '#FDFFD7'
+    },
+    tweets: {
+      background: '#dcc44c',
+      color: '#444444',
+      links: '#bb0110'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('captioncon').start();
+</script>
+        </aside>
 {% endblock %}
