@@ -174,3 +174,7 @@ aside ul b {
 .twtr-widget {
     margin: 0 10px;
 }
+
+.twtr-widget p a {
+    border: none;
+}
