@@ -32,6 +32,9 @@ class Article(models.Model):
                 return tag.name
         return str(published.year)
 
+    def unique_id(self):
+        return 'tag:caption.org,2012:article:{0},{1}'.format(self.year(), self.id)
+
     class Meta:
         # Reverse chronological order.
         ordering = ('-published', '-created')

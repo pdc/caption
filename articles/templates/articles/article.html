@@ -17,7 +17,7 @@
             <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'caption',
-        disqus_identifier = 'tag:caption.org,2012:article:{{ article.year }},{{ article.id }}',
+        disqus_identifier = '{{ article.unique_id }}',
         disqus_url = 'http://caption.org{% url article-detail article_id=article.id year=article.year slug=article.slug %}',
         disqus_developer = true /* XXX DEBUG ONLY */;
 
@@ -32,6 +32,7 @@
             <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
         </section>
 {% endblock %}
+
 {% block asides %}
         <aside id="article-list">
             {% include "articles/article-list-part.html" %}
@@ -39,4 +40,19 @@
         <aside id="info-list">
             {% include "articles/info-list-part.html" %}
         </aside>
+{% endblock %}
+
+{% block disqusjs %}
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'caption';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 {% endblock %}

@@ -186,6 +186,7 @@ aside ul b {
 section #disqus_thread span,
 section .dsq-brlink span {
     /* Deactivate the CAPTION logo styling! */
+    font-size: inherit;
     letter-spacing: inherit;
     text-transform: inherit;
 }
