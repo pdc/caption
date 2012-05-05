@@ -178,3 +178,30 @@ aside ul b {
 .twtr-widget p a {
     border: none;
 }
+
+#disqus_thread {
+    margin: 0 10px;
+}
+
+section #disqus_thread span,
+section .dsq-brlink span {
+    /* Deactivate the CAPTION logo styling! */
+    letter-spacing: inherit;
+    text-transform: inherit;
+}
+
+#disqus_thread h3 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+#dsq-pagination {
+    font-size: 0.8em;
+}
+
+.dsq-brlink {
+    display: block;
+    margin: 0 10px;
+}
+
