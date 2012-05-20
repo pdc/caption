@@ -1,154 +1,63 @@
 -   fields: {name: '2012'}
     model: articles.tag
     pk: 1
--   fields:
-        author: 1
-        content: "**[Daryl Cunningham][1]** (_[Psychiactric Tales][5]_, _[Science\
-            \ Tales][4]_)\nwent to Leeds College of Art and is a prolific cartoonist,\n\
-            sculptor and photographer. He has also worked as a health care\nassistant\
-            \ on an acute psychiatric ward which informed and inspired\nthe thoughts\
-            \ and experiences which went into Psychiatric Tales.\nHe lives in Yorkshire.\n\
-            \n**[Nicola Streeten][6]** (_[Billy, Me, & You][3]_)\nis the co-creator\
-            \ (with artist Sarah Lightman)\nof [Laydeez do Comics][2], a graphic novel\
-            \ forum with a focus on the new wave of\ncomic work (\u2018more domestic\
-            \ than superheroes\u2019) based on the drama of everyday\nlife. An illustrator\
-            \ since 1996, Nicola is studying for a Master of Research\nat the University\
-            \ of Lincoln.\n\n  [1]: http://darryl-cunningham.blogspot.co.uk/\n  [2]:\
-            \ http://www.laydeezdocomics.com/\n  [3]: http://www.myriadeditions.com/Billy\n\
-            \  [4]: http://www.myriadeditions.com/science-tales\n  [5]: http://www.blankslatebooks.co.uk/our-books/psychiatric-tales/\n\
-            \  [6]: http://www.streetenillustration.com/\n"
-        created: 2012-04-24 05:42:45.575990+00:00
-        published: 2012-04-24 05:42:41+00:00
-        slug: lorem-ipsum-dolor-sit-amet
-        tags: [1]
-        title: First Guests Announced
-        updated: 2012-04-24 05:42:45.576027+00:00
-    model: articles.article
+-   fields: {name: '2010'}
+    model: articles.tag
     pk: 2
--   fields:
-        author: 1
-        content: "Oxford\u2019s annual comics convention <span>CAPTION</span>\r\n\
-            returns on the weekend of 18 and 19 August 2012. The theme is **<span>CAPTION</span>\
-            \ Summer Special**.\r\n\r\nJust in case you were wondering, that\u2019\
-            s the weekend *after* the Olympics and *before* the Paralympics.\r\n\r\
-            \n<small>Please ignore any previous dates we may have given for <span>CAPTION</span>\
-            \ 2012. \r\nIt took us a couple of goes to find a weekend that did not\
-            \ clash with too many other events.</small>"
-        created: 2012-04-22 14:24:25.942535+00:00
-        published: 2012-04-22 14:24:23+00:00
-        slug: mark-your-calendar
-        tags: [1]
-        title: Mark Your Calendar
-        updated: 2012-04-27 14:35:19.081838+00:00
-    model: articles.article
-    pk: 1
--   fields:
-        content: ''
-        created: 2012-04-26 17:15:30.570190+00:00
-        name: dates
-        published: 2012-04-26 17:14:23+00:00
-        sequence: 1
-        summary: "18\u201319 August 2012.\r\n<small>That\u2019s the weekend after\
-            \ the Olympics and before the Paralympics.</small>"
-        tags: [1]
-        title: When
-        updated: 2012-04-27 14:18:50.083070+00:00
-    model: articles.info
-    pk: 2
--   fields:
-        content: "<iframe width=\"540\" height=\"350\" frameborder=\"0\" scrolling=\"\
-            no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.co.uk/maps/ms?msa=0&amp;msid=205519939268716807203.00046ccb3e49d65cc8741&amp;ie=UTF8&amp;t=m&amp;ll=51.750839,-1.252356&amp;spn=0.018598,0.046349&amp;z=14&amp;output=embed\"\
-            ></iframe><br /><small>View <a href=\"http://maps.google.co.uk/maps/ms?msa=0&amp;msid=205519939268716807203.00046ccb3e49d65cc8741&amp;ie=UTF8&amp;t=m&amp;ll=51.750839,-1.252356&amp;spn=0.018598,0.046349&amp;z=14&amp;source=embed\"\
-            \ style=\"color:#0000FF;text-align:left\">CAPTION at the  East Oxford\
-            \ Community Centre</a> in a larger map</small>\r\n\r\n<span>CAPTION</span>\
-            \ will once again be at the [East Oxford Community Centre][1], on the\
-            \ corner of Princes Street and Cowley Road in Oxford.\r\n\r\n##  Getting\
-            \ here by public transport\r\n\r\nFrom the train station get a number\
-            \ **5** bus. This stops at the stop just outside the Community Centre\
-            \ shown on the map above. Ring the bell when you see a place called \"\
-            Chicken Cottage\" on your left hand side.\r\n\r\nMost coaches stop in\
-            \ Gloucester Green in the middle of Oxford. From there you want to [walk\
-            \ to Queen Street][4] and get a number **1** or number **5** bus. As above,\
-            \ ring the bell when you see a place called \"Chicken Cottage\" on your\
-            \ left hand side.\r\n\r\n[Oxford Tube][5] and [Oxford Bus Company][7]\
-            \ operate [buses to Oxford from London][6] starting from outside Victoria\
-            \ train station. For CAPTION you want the St Clement\u2019s Street stop.\
-            \ \r\n\r\n## Getting here by car\r\n\r\nThe nearest car park is the [Tesco\
-            \ Pay & Display car park on Union Street][2] (parallel to Princes Street).\
-            \ It costs from \xA31 for 2 hours. The next nearest place to park is [St\
-            \ Clement\u2019s Street car park][3] which costs \xA31.80 for 2 hours.\
-            \ Both of these get expensive if you want to stay for more than a few\
-            \ hours.\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre\r\
-            \n  [2]: http://maps.google.co.uk/maps/ms?hl=en&ie=UTF8&msa=0&msid=116195763687370537358.00046ccb3e49d65cc8741&ll=51.750879,-1.238623&spn=0.008914,0.015879&t=h&z=16\r\
-            \n  [3]: http://maps.google.co.uk/maps/ms?hl=en&ie=UTF8&msa=0&msid=116195763687370537358.00046ccb3e49d65cc8741&ll=51.750879,-1.238623&spn=0.008914,0.015879&t=h&z=16\r\
-            \n  [4]: http://maps.google.co.uk/maps?f=d&source=s_d&saddr=51.753871,+-1.262484&daddr=Queen+St,++Oxford&geocode=FY-zFQMdbLzs_w%3B&hl=en&mra=ls&dirflg=w&sll=51.752938,-1.260939&sspn=0.004457,0.007939&ie=UTF8&ll=51.752673,-1.261314&spn=0.004457,0.007939&t=h&z=17\r\
-            \n  [5]: http://www.oxfordtube.com/\r\n  [6]: http://en.wikipedia.org/wiki/Oxford_to_London_coach_route\r\
-            \n  [7]: http://www.oxfordbus.co.uk/main.php?page_id=27"
-        created: 2012-04-26 17:13:35.791691+00:00
-        name: venue
-        published: 2012-04-26 17:13:27+00:00
-        sequence: 2
-        summary: East Oxford Community Centre, Oxford
-        tags: [1]
-        title: Where
-        updated: 2012-04-29 16:07:22.444094+00:00
-    model: articles.info
-    pk: 1
--   fields:
-        content: "There is a bar at the venue, which will be open from 12 noon on\
-            \ each day.\r\n\r\nThe venue does not sell food, but there a wide range\
-            \ of restaurants and take-aways, to suit all tastes and purses, on Cowley\
-            \ Road.\r\n\r\n\r\n\r\n\r\n\r\n  [1]: http://www.dailyinfo.co.uk/reviews/venue/1007/East_Oxford_Community_Centre"
-        created: 2012-04-29 15:04:50.113759+00:00
-        name: bar
-        published: 2012-04-29 15:06:54+00:00
-        sequence: 3
-        summary: The bar is open from 12 noon each day, and there are lots of eating
-            opportunities nearby.
-        tags: [1]
-        title: Food & Drink
-        updated: 2012-04-29 15:47:30.426548+00:00
-    model: articles.info
-    pk: 5
--   fields:
-        content: "We want you to be free to join in panels and workshops, so instead\
-            \ of renting out individual tables we have the CAPTION table, run by CAPTION\
-            \ gofers. You can leave your minicomics on the table in the morning and\
-            \ in the evening collect the unsold copies and the money for the sold\
-            \ copies minus 10%.\r\n\r\n[![(photo)](http://caption.org/2009/table-by-jinty-on-flickr.jpeg)](http://www.flickr.com/photos/jinty/1104947070/)\r\
-            \nPhoto by Jenni Scott\r\n\r\nThe reason for this unusual system is that\
-            \ we tried having a full-on dealers\u2019 room at one of the first CAPTIONs\
-            \ and it was not much fun because our friends were trapped behind their\
-            \ tables the whole day. (There are a couple of other tables, but they\
-            \ are special cases.)"
-        created: 2012-04-26 17:17:59.060427+00:00
-        name: table
-        published: 2012-04-26 17:17:50+00:00
-        sequence: 4
-        summary: A communal pop-up shop to sell your work, freeing you to go to talks
-            and workshops.
-        tags: [1]
-        title: The CAPTION table
-        updated: 2012-04-29 15:07:04.629058+00:00
-    model: articles.info
+-   fields: {name: '2011'}
+    model: articles.tag
     pk: 3
--   fields:
-        content: "<a href=\"http://www.flickr.com/groups/captioncomicsconvention/\"\
-            ><img src=\"http://farm6.staticflickr.com/5166/5355467340_c29b21085c_q.jpg\"\
-            \ alt=\"\"> \r\n<img src=\"http://farm5.staticflickr.com/4082/4854176433_2f51f0bcca_q.jpg\"\
-            \ alt=\"\">\r\n<img src=\"http://farm5.staticflickr.com/4097/4853382628_70f07cdaab_q.jpg\"\
-            \ alt=\"\"></a>\r\n\r\nBehold pictures from the <span>CAPTION</span> events\
-            \ from the past! This the official group for posting images related to\
-            \ <span>CAPTION</span>s past, present and future.\r\n\r\nYou too can join\
-            \ send photos to the pool. When adding images please tag them with which\
-            \ year they are related to e.g. \"caption 2012\"."
-        created: 2012-04-27 16:11:43.067541+00:00
-        name: flickr
-        published: 2012-04-27 16:11:40+00:00
-        sequence: 99
-        summary: '![Photo](http://farm5.staticflickr.com/4082/4854176433_2f51f0bcca_t.jpg)]'
-        tags: [1]
-        title: Flickr pool
-        updated: 2012-04-27 16:16:14.483929+00:00
-    model: articles.info
+-   fields: {name: '2009'}
+    model: articles.tag
     pk: 4
+-   fields: {name: '2008'}
+    model: articles.tag
+    pk: 5
+-   fields: {name: '2007'}
+    model: articles.tag
+    pk: 6
+-   fields: {name: '2006'}
+    model: articles.tag
+    pk: 7
+-   fields: {name: '2005'}
+    model: articles.tag
+    pk: 8
+-   fields: {name: '2004'}
+    model: articles.tag
+    pk: 9
+-   fields: {name: '2003'}
+    model: articles.tag
+    pk: 10
+-   fields: {name: '2002'}
+    model: articles.tag
+    pk: 11
+-   fields: {name: '2001'}
+    model: articles.tag
+    pk: 12
+-   fields: {name: '2000'}
+    model: articles.tag
+    pk: 13
+-   fields: {name: '1999'}
+    model: articles.tag
+    pk: 14
+-   fields: {name: '1998'}
+    model: articles.tag
+    pk: 15
+-   fields: {name: '1997'}
+    model: articles.tag
+    pk: 16
+-   fields: {name: '1996'}
+    model: articles.tag
+    pk: 17
+-   fields: {name: '1995'}
+    model: articles.tag
+    pk: 18
+-   fields: {name: '1994'}
+    model: articles.tag
+    pk: 19
+-   fields: {name: '1993'}
+    model: articles.tag
+    pk: 20
+-   fields: {name: '1992'}
+    model: articles.tag
+    pk: 21

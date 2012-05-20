@@ -63,6 +63,16 @@ article {
     column-gap: 0;
 }
 
+.has-embedded-media article {
+    -webkit-column-count: 1;
+}
+
+ .embedded-media {
+    float: left;
+    width: 300px;
+    margin: 0 20px 0.5em 10px;
+}
+
 article p {
     width: auto;
 }
@@ -120,6 +130,7 @@ section dd a:active u {
     text-decoration: underline;
     color: #932;
 }
+
 
 #what p {
     width: auto;

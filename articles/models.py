@@ -1,3 +1,6 @@
+# -*-coding: UTF-8-*-
+
+from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -9,6 +12,12 @@ class Tag(models.Model):
     def __unicode__(self):
         return self.name
 
+    def published_articles(self):
+        return self.article_set.filter(published__lte=datetime.now())
+
+    def published_infos(self):
+        return self.info_set.filter(published__lte=datetime.now())
+
 
 class Article(models.Model):
     author = models.ForeignKey(User)
@@ -17,6 +26,12 @@ class Article(models.Model):
     title = models.CharField(max_length=200, unique_for_year='published')
     slug = models.SlugField()
     content = models.TextField()
+
+    # Optional media attachment
+    embedded_media = models.TextField(blank=True, help_text='Optional media attachment.')
+    poster_src = models.URLField(blank=True, help_text='Optional picture to display above media embed. Ideal width: 220px.')
+    poster_credit = models.CharField(max_length=100, blank=True, help_text='Optional credit for the photographer of the poster image')
+    poster_href = models.URLField(blank=True, help_text='Optional link to photographer’s web site')
 
     published = models.DateTimeField(blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, editable=False)

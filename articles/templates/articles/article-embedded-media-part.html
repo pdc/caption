@@ -1,0 +1,14 @@
+
+                {% if article.embedded_media %}
+                <div class="embedded-media">
+                    {% if article.poster_src %}
+                    <img src="{{ article.poster_src }}" alt="" width="220">
+                        {% if article.poster_credit and article.poster_href %}
+                        <small><a href="{{ article.poster_href }}">{{ article.poster_credit }}</a></small>
+                        {% elif article.poster_credit %}
+                        <small>{{ article.poster_credit }}</small>
+                        {% endif %}
+                    {% endif %}
+                    {{ article.embedded_media|safe }}
+                </div>
+                {% endif %}

@@ -18,16 +18,17 @@
         </header>
 {% endblock %}
 {% block main %}
-        <section id="article">
+        {% with article=articles|first %}
+        <section id="article" {% if article.embedded_media %}class="has-embedded-media"{% endif %}>
             <p class="above-heading">Latest news</p>
-            {% with article=articles|first %}
                 <h2>{{ article.title }}</h2>
                 {% include "articles/article-metadata-part.html" %}
                 <article>
+                    {% include "articles/article-embedded-media-part.html" %}
                     {{ article.content|markdown }}
                 </article>
-            {% endwith %}
         </section>
+        {% endwith %}
         <section id="what">
             <h2>What  is <span>CAPTION</span>?</h2>
             <p>

@@ -8,6 +8,7 @@
             <article>
                 <h1>{{ article.title }}</h1>
                 {% include "articles/article-metadata-part.html" %}
+                {% include "articles/article-embedded-media-part.html" %}
                 {{ article.content|markdown }}
             </article>
             {%comment%}
