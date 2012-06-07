@@ -12,16 +12,20 @@ header {
 header p.logo {
     float: left;
     margin: 20px;
+    /*
     font-family: "SpadeRound", sans-serif;
     font-weight: normal;
     font-style: normal;
-    /*
-    font-variant-alternates: styleset(ss01);
-    -ms-font-feature-settings: "ss01" on;
-    -webkit-font-feature-settings: "ss01" on;
-    text-transform: lowercase;
-    */
     text-transform: uppercase;
+    */
+    width: 300px;
+    height: 67px;
+    text-indent: -1000px;
+    background: url(wordmark-300x67.png) no-repeat;
+    width: 220px;
+    height: 49px;
+    text-indent: -1000px;
+    background: url(wordmark-220x49.png) no-repeat;
 }
 
 header p.logo a {
