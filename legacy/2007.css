@@ -1,0 +1,55 @@
+
+#caption2007 {
+	position: relative;
+	/*margin: 1em 206px 1em 64px;*/
+	margin: 0.5em;
+	padding: 1em;
+	
+	color: #344D0B;
+	background-color: #EBE6EC;
+	border: 4px solid #D4C8D6;
+}
+
+#caption2007 h2 {
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	
+	color: #639;
+	font-weight: 900;
+	text-transform: lowercase;
+	font-family: "Hoefler Text", "High Tower text", serif;
+	border: none;
+}
+
+#caption2007 h2 .year {
+	font-weight: 300;
+}
+
+#caption2007 a:link,
+#caption2007 a:visited {
+	color: #639;
+	text-decoration: none;
+	border-bottom: 1px solid #ECE;
+}
+
+#caption2007 a:hover,
+#caption2007 a:active {
+	color: #306;
+	background-color: #FDF;
+	border-color: #936;
+	outline: 2px solid #FDF;
+}
+
+#caption2007theme {
+	font-size: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	font-family: "Zapfino", Edwardian Script ITC, script;
+	color: #603;
+}
+
+
+  /*}}}*/

@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Grid calculations.
+
+Horizontal grid:
+Unit = 11em, with 1em gutter (margins) and 0.25em internal padding within columns.
+First unit starts at 3em.
+
+Vertical grid:
+Unit = 1.25em.
+*/
+
+body {
+	font-size: 100%;
+	
+	background: #EDF url(bg.jpg) top left fixed no-repeat;
+	color: #DA4;
+	font-family: Vista Sans OT, Helvetica Neu, Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	line-height: 1.25;
+}
+
+a:link {
+	color: #FFF;
+	border-bottom: 1px solid #960;
+	text-decoration: none;
+}
+a:visited {
+	color: #FD9;
+	border-bottom: 1px solid #630;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFF;
+	border-bottom: 1px solid #C90;
+	background-color: #960;
+	outline: 2px solid #960;
+	text-decoration: none;
+}
+
+div#banner {
+	position: relative;
+	padding: 1.25em 3em;
+	width: 56em;
+	height: 400px;
+	
+	color: #FFF;
+}
+
+
+div#article {
+	margin: 0 0 0 3em;
+	max-width: 35em; /* 3 units + 2 gutters */
+	float: left;
+	
+	background: #444 url(bg2.jpg) top left fixed;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+div#aside {
+	margin: 0 0 0 1em;
+	max-width: 23em; /* 2 units + 1 gutter */
+	float: left;
+	
+	background: #444 url(bg2.jpg) top left fixed;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.5em 0 0;
+	padding: 0.125em 0.25em;
+	
+	font-weight: 200;
+	color: #FFF;
+}
+
+h2 {
+	font-size: 1em;
+	margin: 0.75em 0 0;
+	padding: 0.5em 0.5em 0.25em;
+	
+	font-weight: bold;
+	color: #FFF;
+	border-top: 1px solid #666;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0.25em 0.5em;
+}
+
+h2+p {
+	margin-top: 0;
+}
+
+#banner p {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+}
+
+b {
+	color: #FFF;
+	font-weight: normal;
+}

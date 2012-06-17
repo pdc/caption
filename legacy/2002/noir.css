@@ -1,0 +1,100 @@
+/* Time-stamp: <pdc 2002-09-02> */
+
+
+body {
+	background: red url(logo-red-128w.png) 0% 0% no-repeat;
+	margin: 0pt;
+	padding: 0pt;
+	font: medium arial, helvetica, sans-serif;
+}
+
+
+#top {
+	margin: 0pt 0pt 0pt 132px;
+	background-color: #CCCCBB;
+	border-left: 4px solid gray;
+	padding: 0pt;
+}
+
+
+#menu {	
+	font-size: small;
+	float: right;
+	width: 18em;
+	background-color: #FFFFEE;
+	border: 2px solid gray;
+	margin-left: 12pt;
+}
+
+#menu p {
+	margin: 0px 0px;
+	border-bottom: 1px dotted gray;
+	padding: 1ex 1em;
+}
+
+#body {
+	margin: 0pt 0pt 0pt 132px;
+	border-left: 4px solid gray;
+	background-color: #CCCCBB;
+	color: black;
+	padding: 0pt;
+}
+
+#body p {
+	margin: 1px 72pt 1pt 0pt ;
+	padding: 1em 1em 1em;
+	background-color: #EEEEDD;
+}
+
+#info {
+	margin: 0pt 76px 12px 0pt;
+	padding: 1em;
+	background-color: white;
+}	
+
+h1 {
+	margin: 0pt 0pt -8pt;
+	padding: 48pt 6pt 0pt;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 36pt;
+	background-color: #333322;
+	color: white;
+	text-align: right;
+}
+
+#dates {
+	margin: 0pt 0pt 0pt 72px;
+	padding: 3pt 6pt 0pt;
+	font:  18pt/22pt arial, helvetica, sans-serif;
+	background-color: white;
+	color: black;
+	text-align: left;
+}
+
+#site {
+	margin:  0pt 0pt 0pt 72px;
+	padding: 3pt 6pt 24pt;
+	font: bold medium  arial, helvetica, sans-serif;
+	background-color: white;
+	color: black;
+	text-align: left;
+	height: 48px;
+}
+
+#watch {
+	margin: 0pt 0pt 0pt 72px;
+	padding: 6pt;
+	font: bold medium arial, helvetica, sans-serif;
+	background-color: black;
+	color: red;
+	text-align: center;
+	bottom: 0px;
+}
+
+h2 {
+	margin: 1px 72pt 1pt 0pt ;
+	padding: 0.5em 1em 0.5em;
+	background-color: #BBBBAA;
+	color: #FFFFFF;
+	font-size: 1em;
+}

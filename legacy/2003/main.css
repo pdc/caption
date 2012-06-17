@@ -1,0 +1,88 @@
+html, body {
+	background: #003300 url(mac-bg-dk.png) repeat-x;
+	color: #66CC66;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "andale mono", monospace;
+	margin: 0px;
+	padding: 0px;
+}
+
+#trail {
+	font-size: 75%;
+	background-color: #000000;
+	color: #33CC33;
+	margin: 0px;
+	padding: 0.5ex 0.5em;
+	border-bottom: 2px dotted #CCFFCC;
+}
+
+strong, em, cite {
+	font-family: "andale mono", monospace;
+	color: #CCFFCC;
+}
+
+#trail a:link,
+#trail a:visited {
+	color: #33CC33;
+	text-decoration: underline;
+}
+
+a:link,
+a:visited {
+	color: #99FF99;
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: "andale mono", monospace;
+	margin: 0px 0px 1ex 0px;
+	padding: 1ex 24pt;
+	text-align: center;
+	background: #33CC33 url(garden-bg.png) repeat-x;
+	color: #000000;
+	border-bottom: 2px dotted #99FF99;
+}
+
+p {
+	margin: 1ex 24pt;
+}
+
+#intro {
+	position: absolute;
+	left: 0pt;
+	width: 50%;
+	border-right: 1px dotted #99FF99;
+}
+
+#guest {
+	position: relative;
+	left: 50%;
+	width: 50%;
+}
+
+h2 {
+	/* display: run-in; */
+	font-family: "andale mono", monospace;
+	font-size: 100%;
+	font-weight: bold;
+	background-color: #33CC33;
+	color: #000000;
+	margin: 0.5ex 0pt;
+	padding: 0.5ex 24pt;
+	border-bottom: 2px dotted #99FF99;
+}
+
+.imagequote { 
+	float: right;
+	margin: 0px;
+	text-align: right;
+}
+
+.imagequote img {
+	border: 1px dotted #99FF99;
+	border-right: none;
+}

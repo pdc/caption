@@ -1,0 +1,222 @@
+a:link {
+	color: #C30;
+	font-weight: bolder;
+}
+
+#trail a:link,
+#trail a:visited {
+	color: #FFF;
+}
+
+#navigator a {
+	display: block;
+	background: url("norm_left.gif") no-repeat left top;
+	margin: 0;
+	padding: 5px 15px 4px;
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #900;
+	font-weight: bolder;
+}
+
+a:hover,
+#navigator a:hover {
+	color: #F63;
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: #FCC;
+	color: #F00;
+	text-decoration: underline;
+}
+
+body {	
+	margin: 0;
+	padding: 0;
+	background: #FFF url(monocle-w285.png) 100% 11em fixed no-repeat;
+	color: #321;
+	font-size: 100%;
+	font-family: "Hoefler Text", Perpetua, Baskerville, Garamond, serif;
+}
+
+code {
+	font-family: "Hoefler Text", Perpetua, Baskerville, Garamond, serif;
+	font-style: italic;
+}
+
+dfn,
+strong {
+	font-weight: bold;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.125em;
+}
+
+div.col div {
+	width: 24em;
+	float: left;
+	border-right: 1px dotted #C30;
+	background: #FFF url(mon-faded-280w.png) 100% 11em fixed no-repeat;
+}
+
+div#newVenue div {
+	background: #F2F2BF;
+	border: 3px dotted #C30;
+	padding-top: 1em;
+	margin: 0 0 1em 0.5em;
+}
+
+div.clear {
+	clear: both;
+	margin: 1em;
+	border-top: 1px dotted #C30;
+}
+
+div.col 
+}
+
+div.pic {
+	width: 24em;
+	overflow: hidden;
+	float: left;
+}
+
+div.pic2 {
+	width: 48em;
+	overflow: hidden;
+	float: left;
+}
+
+div#banner {
+	background: #D9E5F2 url(vic2b.gif) 0 7em fixed no-repeat;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px dotted #C30;
+}
+
+div#body {
+	margin: 0;
+	padding: 0;
+}
+	
+div#newVenue {
+	float: left;
+	width: 24em;
+}
+
+h1 {
+	color: #C30;
+	font-size: 4em;
+	line-height: 1;
+	margin: 0.25em 0.25em 0 0.5em;
+}
+
+h2 {
+	font-size: 1em;
+	line-height: 1.2;
+	margin: 0;
+	max-width: 12em;
+	padding: 0.75em 1em 0.25em 1em;
+	color: #C30;
+	float: left;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+#navigator li {
+	display: block;
+	float: left;
+	background: url(norm_right.gif) no-repeat right top;
+	margin: 0;
+	padding: 0;
+}
+
+#navigator li#current {
+	background: url("norm_right_on.gif") no-repeat right top;
+}
+
+p {
+	margin: 0 1em 1em 2em;
+	max-width: 36em;
+	line-height: 1.4;
+	font-size: 1em;
+}
+
+p#date {
+	font-size: 2em;
+	margin: 0 1em 0 1em;
+	max-width: none;
+	padding: 0.125em 0 0 0;
+	text-align: right;
+	border-top: 2px solid #C30;
+}
+
+p#trail {
+	margin: 0;
+	width: 100%;
+	max-width: none;
+	padding: 0.25em 0.5em;
+	background-color: #69C;
+	color: white;
+}
+
+/*
+p#slogan {
+	margin: 0.125em 1.33em 1em;
+	max-width: none;
+	font-size: 1.5em;
+	font-style: italic;
+	text-align: right;
+	color: #C30;
+}
+*/
+
+p#slogan {
+	position: absolute;
+	top: 16px;
+	left: 0em;
+	margin: 0;
+	padding: 0;
+	font-family: "Marker Felt", "Comic Sans MS", sans-serif;
+	font-size: 5em;
+	font-weight: 400;
+	color: #309;
+	text-indent: -5000px;
+	background: url(backgraff.gif) 100% 0 no-repeat;
+	/* width: 961px; */
+	width: 100%;
+	height: 129px;
+}
+
+strong span {
+	font-size: 1.25em;
+}
+
+#navigator strong {
+	display: block;
+	background: url("norm_left_on.gif") no-repeat left top;
+	margin: 0;
+	padding: 5px 15px 5px;
+	color: #000;
+	font-size: inherit;
+	font-weight: bold;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+ul#navigator {
+	margin: 0 0 1em 0;
+	padding: 10px 10px 0;
+	line-height: 1;
+	background: #DAE0D2 url("norm_bg.gif") repeat-x bottom;
+	width: 100%;
+	float: left;
+}

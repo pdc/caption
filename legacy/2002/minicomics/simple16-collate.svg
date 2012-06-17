@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg viewBox="45 225 285 210" width="285" height="210">
+	<defs>
+		<filter id="Drop_Shadow" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blurredAlpha"/>
+			<feOffset in="blurredAlpha" dx="3" dy="3" result="offsetBlurredAlpha"/>
+			<feFlood result="flooded" flood-color="#000000" flood-opacity="0.65"/>
+			<feComposite in="flooded" operator="in" in2="offsetBlurredAlpha"
+				result="coloredShadow"/>
+			<feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+		</filter>
+		<symbol id="page" filter="url(#Drop_Shadow)">
+			<path fill="#ffffff" stroke="#000000" stroke-width="2"
+				d="M1 11 L74.25 1 L148.5 11 L148.5 101 L74.5 106 L1 101 z"/>
+			<line fill="none" stroke="#808080" stroke-width="1" x1="75.25" y1="2"
+				x2="75.25" y2="105"/>
+		</symbol>
+	</defs>
+	<use xlink:href="#page" x="50" y="230"/>
+	<text fill="#000000" font-size="24" font-family="Arial" x="135" y="260">7</text>
+	<use xlink:href="#page" x="90" y="260"/>
+	<text fill="#000000" font-size="24" font-family="Arial" x="175" y="290">5</text>
+	<use xlink:href="#page" x="130" y="290"/>
+	<text fill="#000000" font-size="24" font-family="Arial" x="215" y="320">3</text>
+	<use xlink:href="#page" x="170" y="320"/>
+	<text fill="#000000" font-size="24" font-family="Arial" x="255" y="350">1</text>
+</svg>

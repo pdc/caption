@@ -1,0 +1,38 @@
+
+#caption2001 a:link {
+	color: #990099;
+}
+
+#caption2001 a:visited {
+	color: #660066;
+}
+
+#caption2001 a:hover {
+	color: #FF33FF;
+	background-color: #FFFFCC;
+}
+
+div#caption2001 {
+	margin: 0.5em;
+	background-color: #FFCCCC;
+	border: 2px dashed #660000;
+	text-align: center;
+	padding: 3pt;
+}
+
+
+#caption2001 h3 {
+	margin: 0pt 0pt 0.5em 0pt;
+	font: 1.2em georgia, utopia, times, serif;
+	font-weight: 600;
+	font-style: italic;
+	color: #660000;
+	border: none;
+}
+
+div#caption2001 p {
+	margin-bottom: 0pt;
+	font: 1em georgia, utopia, times, serif;
+	font-weight: 400;
+	font-style: italic;
+}

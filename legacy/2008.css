@@ -1,0 +1,63 @@
+
+#caption2008 {
+	clear: both;
+	margin: 1.25em 1em 1.25em 96px;
+	padding: 0.25em 0;
+	width: 47em;
+	
+	color: #DA4;
+	background: #444 url(2008/bg2.jpg) top left fixed no-repeat;
+	-webkit-border-radius: 0.75em;
+	-moz-border-radius: 0.75em;
+}
+
+#squeeze #caption2008 {
+	margin: 1.25em 1em;
+	width: auto;
+}
+
+#caption2008 a:link {
+	color: #FFF;
+	border-bottom: 1px solid #960;
+	text-decoration: none;
+}
+#caption2008 a:visited {
+	color: #FD9;
+	border-bottom: 1px solid #630;
+	text-decoration: none;
+}
+#caption2008 a:hover {
+	color: #FFF;
+	border-bottom: 1px solid #C90;
+	background-color: #960;
+	outline: 2px solid #960;
+	text-decoration: none;
+}
+
+
+#caption2008 h2 {
+	font-size: 2em;
+	padding: 0.125em 0.25em;
+	
+	color: #FFF;
+	font-weight: bold;
+	background: transparent;
+}
+
+#caption2008 h2 a:link,
+#caption2008 h2 a:visited {
+	color: #FFF;
+}
+
+#caption2008 p {
+	margin: 0 0 1em 0;
+	padding: 0 0.5em;
+}
+
+#caption2008 p#caption2008venue {
+	margin-bottom: 0;
+	padding-top: 0.25em;
+	
+	border-top: 1px solid #666;
+	color: #FFF;
+}

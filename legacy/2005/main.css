@@ -1,0 +1,124 @@
+/* Main stylesheet for CAPTION 2005 */
+
+#trail a:link, #trail a:visited {
+	padding: 0 0.5em;
+	color: #EEE;
+}
+
+#trail a:hover, #trail a:active {
+	background-color: #111;
+	color: #FFF;
+	text-decoration: underline;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	
+	background-color: #EEE;
+	color: #111;
+	font-family: Helvetica Neue, Helvetica CS, Helvetica, Arial, sans-serif;
+	font-size: 100%;
+}
+ 
+code, tt {	
+	font-family: Helvetica Neue, Helvetica CS, Helvetica, Arial, sans-serif;
+}
+
+div#banner {
+	width: 100%;
+	margin: 0 0 1.2em 0;
+	
+	background-color: #630;
+	color: #EEE;
+}
+
+div#content {
+	float: left;
+	width: 36em;
+	margin: 0;
+}
+
+div#more {
+	float: left;
+	width: 11em;
+	margin: 0;
+	
+	color: #630;
+	font-weight: bold;
+}
+
+h1 {
+	margin: 0;
+	padding: 2em 0.333em 0;
+	
+	background: #630 url(banner.png) 100% 50% no-repeat;
+	color: #FFF;
+	font-size: 3em;
+	font-weight: 200;
+	text-align: right;
+}
+
+#content h2 {
+	float: left;
+	width: 11em;
+	margin: 0 0 0 1em;
+	
+	font-size: 1em;
+	font-weight: bold;
+	color: #630;
+}
+
+#content h3 {
+	clear: left;
+	float: left;
+	width: 5em;
+	margin: 0 0 0 7em;
+	
+	font-size: 1em;
+	font-weight: normal;
+	color: #630;
+}
+
+a img {
+	padding: 1px;
+	border: 1px dashed;
+}
+
+h1 img {
+	display: block;
+	position: absolute;
+	top: 0.30em;
+	width: 3.207em;
+	height: 3.207em;
+}
+
+#content p {
+	width: 23em;
+	margin: 0 auto 1.2em 13em;
+}
+
+#more p {
+	width: 17em;
+	margin: 0 auto 1.2em 1em;
+}
+
+#more p.lolight {
+	font-weight: normal;
+}
+
+p#strap {
+	margin: 0;
+	padding: 0 1em;
+	
+	text-align: right;
+}
+
+p#trail {
+	margin: 0;
+	padding: 0 0.833em;  /* 1.333 em - 0.5em because of padding of a elements */
+	
+	font-size: 0.75em;
+	background-color: #630;
+	color: #EEE;
+}

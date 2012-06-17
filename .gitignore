@@ -1,3 +1,4 @@
 *.pyc
 *.db
 caption/settings.py
+*~

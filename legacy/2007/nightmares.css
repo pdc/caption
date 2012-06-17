@@ -1,0 +1,234 @@
+/*{{{ Global */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-size: 100%;
+	
+	font-family: "Cochin", "High Tower text", serif;
+	line-height: 1.2;
+    background: #3D2939 url(bg1.gif) fixed;
+    color: #CCC;
+}
+
+:link {
+	color: #C03;
+}
+
+:visited {
+	color: #D86699;
+}
+
+:link:hover,
+:visited:hover {
+	color: #F24;
+	background-color: #602;
+	outline: 0.5em solid #602;
+}
+
+b {
+	font-family: "Copperplate", "Copperplate Gothic", sans-serif;
+	font-weight: inherit;
+	text-transform: lowercase;
+}
+
+/*}}}*/
+/*{{{ Banner */
+
+#banner {
+	position: relative;
+	height: 8em;
+	
+	background-color: #222;
+}
+
+h1 {
+	font-size: 4em;
+	position: absolute;
+	left: 1em;
+	top: 0.7em;
+	
+	font-family: "Copperplate", "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;
+	font-weight: 700;
+	color: #F22;
+}
+
+#banner_theme {
+	font-size: 2em;
+	position: absolute;
+	left: 7em;
+	top: 2.5em;
+	
+	font-style: italic;
+	color: #FFF;
+}
+
+#banner_dates {
+	position: absolute;
+	left: 28em;
+	top: 0.6em;
+}
+#banner_venue {
+	position: absolute;
+	left: 28em;
+	top: 1.8em;
+}
+
+#style_menu {
+	font-size: 0.75em;
+	position: absolute;
+	right: 1px;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	
+	font-family: "Copperplate", "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;
+	text-transform: uppercase;
+}
+
+#style_menu li {
+	display: block;
+	list-style: none;
+	margin: 0;
+}
+
+#style_menu a {
+	display: block;
+	padding: 0.3em 0.5em;
+	
+	color: #C03;
+	background-color: #333;
+	border: 1px solid #601;
+	border-right: none;
+	text-decoration: none;
+}
+
+#style_menu a:before {
+	content: "\2620\00A0";
+	visibility: hidden;
+}
+
+#style_menu a:hover {
+	color: #F06;
+	outline: none;
+	text-decoration: underline;
+}
+
+#style_menu a:hover:before {
+	visibility: visible;
+}
+
+#style_menu a.activeStyleSheet {
+	background-color: #666;
+	color: #CCC;
+	text-decoration: none;
+}
+
+#style_menu a.activeStyleSheet:before {
+	visibility: visible;
+}
+
+/*}}}*/
+/*{{{ Thrills (headlines and articles) */
+
+#headlines,
+.thrill {
+	position: absolute;
+	left: 2em;
+	margin-top: 2.4em;
+	width: 36em;
+}
+
+#headlines li {
+	margin: 0 0 1.2em 0;
+	
+	font-family: "Copperplate", "Copperplate Gothic", "Copperplaye Gothic Bold", sans-serif;
+	list-style: none;
+}
+
+.thrill h2 {
+	font-size: 2em;
+	margin: 0 0 0.6em 0;
+	
+	font-family: "Copperplate", "Copperplate Gothic", "Copperplate Gothic Bold", sans-serif;
+	line-height: 1;
+	color: #FFF;
+}
+
+.thrill p {
+	margin: 0;
+	text-indent: 1em;
+}
+
+.thrill>div p:first-child {
+	text-indent: 0;
+}
+
+.thrill>div p:first-child:first-letter {
+	font-size: 3em;
+	float: left;
+	padding: 0 0.167em;
+	margin: 0 0.0833em 0 0;
+	
+	font-family: "Copperplate", "Copperplate Gothic", "Copperplate Gothic Light", sans-serif;
+	line-height: 1;
+	background-color: #301;
+}
+
+.thrill>div p:first-child:first-line {
+	font-variant: small-caps;
+}
+
+.thrill .image img {
+	display: block;
+	float: right;
+	margin: 0 0 0 0.5em;
+}
+
+.thrill .wide.image img {
+	float: none;
+	margin: 1.2em 0;
+}
+
+/*}}}*/
+/*{{{ Info */
+
+#info,
+#sidebar {
+	position: absolute;
+	left: 40em;
+	margin-top: 2.4em;
+	width: 18em;
+}
+
+#info p {
+	margin: 0;
+	text-indent: 1em;
+}
+
+#info p:first-child {
+	text-indent: 0;
+}
+
+#info li {
+	margin: 0.5em 0 0.5em 1em;
+	list-style-type: circle;
+}
+
+#sidebar h2 {
+	font-size: 1em;
+	margin: 0;
+	
+	font-family: Copperplate, "Copperplate Gothic", "Copperplate Gothic Light", sans-serif;
+	font-weight: 400;
+}
+
+#sidebar li {
+	margin: 0.6em 0 0.6em 1em;
+	list-style-type: square;
+}
+
+/*}}}*/

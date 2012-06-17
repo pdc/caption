@@ -1,0 +1,21 @@
+
+#caption2000 a:link {
+	color: red;
+}
+
+#caption2000 a:visited {
+	color: maroon;
+}
+
+#caption2000 a:hover {
+	color: #FF3399;
+	background-color: #333399;
+}
+
+div#caption2000 {
+	margin: 0.5em;
+	color: white;
+	background-color: #000033;
+	font: 1em georgia, serif;
+	padding: 6pt;
+}

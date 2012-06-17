@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="200" height="230" viewBox="135 145 200 230">
+	<defs>
+		<filter id="Drop_Shadow" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+			width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blurredAlpha"/>
+			<feOffset in="blurredAlpha" dx="3" dy="3" result="offsetBlurredAlpha"/>
+			<feFlood result="flooded" flood-color="#000000" flood-opacity="0.65"/>
+			<feComposite in="flooded" operator="in" in2="offsetBlurredAlpha"
+				result="coloredShadow"/>
+			<feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+		</filter>
+	</defs>
+	<polygon points="104.5,180 185.767,155.406 186.759,278.869 109.5,311"
+		fill="#ffffff" stroke="#000000" transform="translate(37 32)"
+		stroke-width="2" filter="url(#Drop_Shadow)"/>
+	<polygon points="104.5,181 191.173,159.821 191.962,284.705 107.5,311"
+		fill="#ffffff" stroke="#000000" transform="translate(37 32)"
+		stroke-width="2" filter="url(#Drop_Shadow)"/>
+	<polygon points="103.5,180 198.962,164.649 197.775,295.61 106.11,310.406"
+		fill="#ffffff" stroke="#000000" transform="translate(37 32)"
+		stroke-width="2" filter="url(#Drop_Shadow)"/>
+	<polygon points="103.5,181 202.775,170.47 202.58,295.307 106.5,311"
+		fill="#ffffff" stroke="#000000" transform="translate(37 32)"
+		stroke-width="2" filter="url(#Drop_Shadow)"/>
+	<polygon points="104.5,180 208.476,179.878 209.07,307.661 109.5,311"
+		fill="#ffffff" stroke="#000000" filter="url(#Drop_Shadow)"
+		transform="matrix(1 0 0 1 88 11) translate(-52 21) translate(103.5 239.5) skewY(2.2026) translate(-103.5 -239.5)"
+		 stroke-width="2"/>
+	<polygon points="104.5,181 212.289,184.415 212.281,314.8 107.5,311"
+		fill="#ffffff" stroke="#000000" filter="url(#Drop_Shadow)"
+		transform="matrix(1 0 0 1 88 11) translate(-52 21) translate(103.5 239.5) skewY(2.2026) translate(-103.5 -239.5)"
+		 stroke-width="2"/>
+	<polygon points="103.5,180 215.695,191.695 215.703,322.333 108.5,312"
+		fill="#ffffff" stroke="#000000" filter="url(#Drop_Shadow)"
+		transform="matrix(1 0 0 1 88 11) translate(-52 21) translate(103.5 239.5) skewY(2.2026) translate(-103.5 -239.5)"
+		 stroke-width="2"/>
+	<polygon points="103.5,181 219.906,198.818 219.711,330.872 106.5,311"
+		fill="#ffffff" stroke="#000000" filter="url(#Drop_Shadow)"
+		transform="matrix(1 0 0 1 88 11) translate(-52 21) translate(103.5 239.5) skewY(2.2026) translate(-103.5 -239.5)"
+		 stroke-width="2"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="138" y1="173" x2="138"
+		y2="150"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="254" y1="185" x2="254"
+		y2="159"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="139" y1="160" x2="252"
+		y2="172"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="139" y1="160" x2="149"
+		y2="158"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="139" y1="160"
+		x2="148.64" y2="164.432"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="252" y1="172"
+		x2="241.992" y2="167.246"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="252" y1="172"
+		x2="241.794" y2="175.579"/>
+	<text fill="#000000" font-family="Arial" x="176px" y="149px" font-size="12"
+		transform="translate(176.564 144.704) skewY(6.96547) translate(-176.564 -144.704) translate(176.564 146.917) skewY(358.184) translate(-176.564 -146.917) translate(176.564 146.357) skewY(359.391) translate(-176.564 -146.357) translate(2 5.84032)"
+		>74 mm</text>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="270" y1="235" x2="292"
+		y2="235" transform="translate(281 235) scale(1 1) translate(-281 -235)"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="270" y1="367" x2="294"
+		y2="367"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="280" y1="239" x2="280"
+		y2="364"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="280" y1="239" x2="275"
+		y2="250"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="280" y1="239"
+		x2="284.611" y2="249.903"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="280" y1="364"
+		x2="284.934" y2="352.087"/>
+	<line fill="none" stroke="#000000" stroke-width="1" x1="280" y1="364"
+		x2="274.991" y2="351.896"/>
+	<text fill="#000000" font-size="12" font-family="Arial" x="289px" y="303px">105 mm</text>
+	<text fill="#000000" font-size="12" font-family="Arial" x="263px" y="197px"
+		transform="translate(-7.56303 10.9244)">16 pp.</text>
+</svg>

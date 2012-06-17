@@ -1,0 +1,138 @@
+/* Stylesheet for the index page */
+
+html {
+	background-color: #EECCCC;
+	border:		thin solid #FFFFFF;
+	padding:	8pt;
+}	
+
+body {
+	padding-left: 	10%;
+	padding-right: 	10%;
+	padding-top:	12pt;
+	padding-bottom:	18pt;
+	background-color: #FFDDEE;
+	border:		thin solid #996666;
+	font-family:	georgia, times, times roman, serif;
+	font-size:	10pt;
+	line-height:	1.4;
+}
+
+h1 {
+	margin-top:	1ex;
+	padding-top:	4pt;
+	padding-bottom:	4pt;
+	text-align:	center;
+	font-family:	georgia, times, times roman, serif;
+	font-weight:	300;
+	font-size:	18pt;
+	font-style:	italic;
+	color:		#660000;
+	background-color: #EECCCC;
+	border:		thin solid #996666;
+}
+
+h2 {
+	margin-top:	1ex;
+	font-family:	georgia, times, times roman, serif;
+	font-weight:	300;
+	font-size:	12pt;
+	font-style:	italic;
+	color:		#660000;
+	border-top:		thin solid #996666;
+}
+
+p, ul, dt, dd {
+	font-family:	georgia, times, times roman, serif;
+	font-size:	10pt;
+	line-height: 1.4;
+}
+
+ul {
+	margin-top:	1ex;
+	margin-bottom:	1ex;
+}	
+
+li {
+	margin-top:	1ex;
+	margin-bottom:	1ex;
+}
+
+/* The "breadcrumbs" at the top of the window */
+p.path {
+	position:	absolute;	
+	top:		1pt;
+	left:		1pt;
+	font-size:	8pt;
+	font-style:	normal;
+	font-weight:	400;
+	font-family:	verdana, tahoma, helvetica, sans-serif;
+	margin-top:	0pt;
+	margin-bottom:	0pt;
+}
+
+p.footer {
+	font-size:	8pt;
+	font-style:	normal;
+	font-weight:	400;
+	font-family:	verdana, tahoma, helvetica, sans-serif;
+	margin-top:	2em;
+	margin-bottom:	0pt;
+	text-align:	right;
+}
+
+span.logo {
+	font-size:	14pt;
+	color:		#660000;
+}
+
+em {
+	font-weight:	600;
+	color:		#660000;
+}
+
+code {
+	font-family:	univers, helvetica narrow, helvetica, arial, sans-serif;
+	font-weight:	400;
+	font-size:	100%;
+}
+
+a:link, a:link em {
+	color: blue;
+}
+
+a:visited, a:visited em {
+	color: navy;
+}
+
+a:active, a:active em {
+	color: red;
+}
+
+a:hover {
+	background-color: #FFEE66;
+}
+
+dt {
+	margin-top: 2ex;
+}
+
+.new {
+	border: 0.5pt solid red;
+	background-color: yellow;
+	font-family: verdana, sans-serif;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+img {
+	margin: 3pt;
+}
+
+img[align=right] {
+	clear: right;
+}
+
+img[align=left] {
+	clear: left;
+}

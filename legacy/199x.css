@@ -1,0 +1,59 @@
+
+div#caption1996,
+div#caption1994 {
+	border: 2px solid #6699CC;
+	padding: 6pt;
+	background-color: white;
+	font: 1em georgia, serif;
+}
+
+#squeeze #caption1996,
+#squeeze #caption1994 {
+	margin: 1.25em 1em;
+}
+
+#squeeze #caption1996 h3,
+#squeeze #caption1994 h3 {
+	padding: 0;
+}
+
+div#caption1997 {
+	margin: 0.5em;
+	background-color: #FFFFCC;
+	color: #330000;
+	border: 4px solid #990000;
+	padding: 12pt;
+	font: 1em helvetica narrow, helvetica, arial, sans-serif;
+}
+
+#caption1997 h3 {
+	font-family: helvetical narrow, helvetica, arial, sans-serif;
+	padding: 0;
+	background-color: #CCCC99;
+	color: #660000;
+	margin: 0pt 0pt 0pt 1em;
+}
+
+
+div#caption1998 {
+margin: 0.5em;
+	border: 2px solid green;
+	background-color: white;
+	font: 1em georgia, serif;
+	padding: 6pt;
+}
+
+div#caption1999  {
+margin: 0.5em;
+	border: 4px dotted #CCCCCC;
+	background-color: white;
+	font: 10pt helvetica, arial, sans-serif;
+	padding: 6pt;
+}
+
+#caption1999 h3 {
+	font: 1.2em helvetica, arial, sans-serif;
+	padding: 0;
+	font-weight: bold;
+	font-style: italic;
+}

@@ -1,0 +1,71 @@
+/* Time-stamp: <pdc 2002-06-05> */
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: medium;
+	margin: 0px;
+	padding: 0px;
+}
+
+#logo {
+	font-size: xx-large;	
+	text-align: right;
+	margin: 0px 0px -0.4ex 0px;
+	padding: 5ex 1em 0pt 1em;
+	background-color: black;
+	color: silver;
+}
+
+#trail {
+	font-size: small;
+	font-weight: bold;
+	margin: 0px;
+	padding: 1pt 12pt;
+	background-color: gray;
+	color: white;
+}
+
+#trail a:link {
+	color: white;
+}
+
+#trail a:visited {
+	color: white;
+}
+
+#trail a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: x-large;
+	font-weight: bold;
+	margin: 1em 12pt;
+}
+
+h2 {
+	font-size: large;
+	font-weight: bold;
+	margin: 1em 12pt;
+	border-top: 1px dashed  silver;
+	padding-top: 1ex;
+}
+
+p {
+	margin: 2ex 12pt 2ex 36pt;
+}
+
+table.display, blockquote {
+	margin: 2ex 12pt 2ex 60pt;
+}
+
+th {
+	font-size: small;
+	font-weight: bold;
+}
+
+td {
+	font-size: medium;
+}
+	

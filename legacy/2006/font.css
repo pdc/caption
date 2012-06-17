@@ -1,0 +1,30 @@
+body {
+	font-family: "Hoefler Text", "High Tower text", "Garamond", "Classical Garamond", serif;
+	
+	/*
+	We se the base font size here.
+	In the layout we specifiy font sizes in em.
+	*/
+	font-size: 100%;
+	
+	line-height: 1.2;
+}
+
+code {
+	font-family: "Univers", "Zurich", "Helvetica", "Arial", sans-serif;
+	font-size: 0.9em;
+}
+
+h1, h2 {
+	font-family: "Univers", "Zurich", "Helvetica", "Arial", sans-serif;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+#brand h1 span.caption {
+	font-weight: 800;
+}
+
+#brand h1 span.year {
+	font-weight: 200;
+}

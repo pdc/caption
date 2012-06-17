@@ -1,0 +1,96 @@
+/* c99.css --
+  Style sheet for spacecaption99
+  Time-stamp: <pdc 2001-03-18>	
+*/
+
+body {
+	background-color: #000066;
+	color: white;
+	font: 11pt/13pt Lucida, Univers, Helvetica, sans-serif;
+}
+
+h1 {
+	font: 18pt/18pt Lucida, Univers, Helvetica, sans-serif;
+}
+
+span.logo {
+	font-family: Lucida, Univers, Helvetica, sans;
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+p.shout {
+	font-size: 14pt;
+	color: maroon;
+	font-wright: 700;
+	font-style: italic;
+}
+
+div.content p {
+	color: black;
+	clear: both;
+}
+
+div.content {
+	background-color: white;
+	color: black;	
+	padding-left: 72px;
+	padding-right: 6pt;
+	padding-top: 3pt;
+	padding-bottom: 3pt;
+	border: 4px dotted #CCCCCC;
+	margin: 12pt;
+}
+
+img.icon {
+	float: left;
+	margin-left: -66px;
+	margin-top: 16px;
+}
+
+p.path {
+	font-size: 8pt;
+	margin: 0pt;
+	color: white;
+}
+
+p.coda {
+	font-size: 8pt;
+	margin: 0pt;
+	text-align: right;
+	color: silver;
+}
+
+
+p.link {
+	border: 1px dotted gray;
+	padding: 6pt;
+	margin-right: 3pt;
+}
+
+h1 {
+	margin: 0pt;
+}
+
+h2 {
+	font-size: 12pt;
+	border-top: 1px solid maroon;
+	background-color: #CCCCCC;
+	color: black;
+	padding: 1pt 3pt 2pt 3pt;
+	clear: both;
+}
+
+div.content p {
+	margin-right: 12pt;
+}
+
+.ahem {
+	display: none;
+}

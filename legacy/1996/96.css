@@ -1,0 +1,68 @@
+body {
+	border: 8px solid #0099CC;
+	font: 11pt georgia, serif;
+	line-height: 1.3;
+	margin: 0pt;
+	background-color: #FFFFFF;
+	color: #003366;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: trebuchet ms, sans-serif;
+	font-weight: 400;
+	color: #006666;
+	background-color: #99CCFF;
+	padding: 0pt 0.5em;
+}
+
+h1 {
+	font-size: 36pt;
+	margin: 0pt 0pt 0pt 0pt;
+}
+
+h2 {
+	font-size: 18pt;
+}
+
+h3 {
+	font-size: 14pt;
+}
+
+h4 {
+	font-size: 12pt;
+}
+
+#leftCol {
+	font-family: trebuchet ms, sans-serif;
+	font-weight: 400;
+	color: #006666;
+	background-color: #99CCFF;
+}
+
+#rightCol p, #rightCol dl  {
+	margin: 1em 1em;
+}
+
+dt {
+	margin: 1em 0pt 0pt 0pt;
+}
+
+dd {
+	margin: 0pt 0pt 1em 2em;
+}
+
+p.logo {
+	margin: 0pt;
+}
+
+p.path {
+	font: bold 9pt trebuchet ms, sans-serif;
+	margin: 0.5em;
+}
+
+#rightCol p.details {
+	margin: 0pt 0pt 1em 0pt;
+	color: #006666;
+	background-color: #99CCFF;
+	padding: 1pt 1em;
+}

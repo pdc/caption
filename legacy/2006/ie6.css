@@ -1,0 +1,9 @@
+
+div#logo,
+div#slogan {
+	position: absolute;
+}
+
+#content div.section {
+	background: #EEF;
+}

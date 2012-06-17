@@ -1,0 +1,128 @@
+/*{{{ global */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FF6 url(bg.gif) fixed 0% 0% no-repeat;
+}
+
+/*}}}*/
+/*{{{  brand */
+
+div#logo {
+	display: block;
+	position: fixed;
+	left: 48px;
+	top: 8px;
+}
+div#slogan {
+	display: block;
+	position: fixed;
+	left: 192px;
+	top: 24px;
+}
+
+div#brand {
+	position: absolute;
+	/*width: 24em;*/
+	right: 2em;
+	top: 1em;
+	padding-bottom: 0.5em;
+	
+	border: 2px solid rgb(147, 219, 232);
+	/* -moz-border-radius: 1em; */
+	background-color: rgb(186, 140, 148);
+	color: #EFD;
+}
+
+#brand h1 {
+	font-size: 3em;
+	padding: 0.33em 0.33em 0 0.33em;
+	background-color: rgb(255, 163, 163);
+	color: #FFF;
+}
+
+#brand p {
+	padding: 0.25em 1em 0.25em 3em;
+}
+
+#brand p#strap {
+	margin: 0;
+	padding: -0 1em 0.25em 1em;
+	
+	font-style: italic;
+	background-color: rgb(255, 163, 163);
+	color: #FFF;
+}
+	
+/*}}}*/
+/*{{{ sections common */
+
+div#content {
+	position: relative;
+	margin-top: 12em;
+}
+
+#content .caption, 
+#content .smallcaps {
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+
+div.section {
+	float: left;
+	width: 24em;
+	min-height: 18em;
+	margin: 0 0 2em 1em;
+	
+	border: 2px outset #FFF;
+	-moz-border-radius: 0.5em;
+	background: #EEE url(bgpale.gif) fixed 0% 0% no-repeat;
+	color: #000;
+}
+
+div.mapsection {
+	width: auto;
+}
+
+.section h2 {
+	font-size: 2em;
+	padding: 0.5em 0.5em 0 0.5em;
+	
+	/* background-color: #F8F8F8; */
+	color: rgb(93, 70, 74);
+}
+
+.mapsection img {
+	display: block;
+	float: left;
+	margin: 1em 1em 1em 0;
+}
+
+.section p {
+	margin: 0.5em 1em;
+	max-width: 30em;
+}
+
+.section p.subheading {
+	margin: 0;
+	padding: 0 1em 0.5em 1em;
+	text-align: right;
+	
+	/* background-color: #F8F8F8; */
+	color: rgb(93, 70, 74);
+	text-transform: lowercase;
+	font-style: italic;
+}
+
+.section pre {
+	font-size: inherit;
+	margin: 0.5em 1em 0.5em 3em;
+	
+	font-family: inherit;
+}
+
+/*}}}*/

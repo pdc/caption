@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background: #FFF url(timewarp_800.png) left top no-repeat; */
+	background: #FED url(timewarp_1843x910.png) (100% auto) left top no-repeat;
+}
+
+#date {
+	margin: 30%
+}

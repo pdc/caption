@@ -1,0 +1,63 @@
+
+/*{{{ 2006 */
+
+div#caption2006 {
+	position: relative;
+	/*margin: 1em 206px 1em 64px;*/
+	margin: 0.5em;
+	
+	padding: 1em;
+	border: 0.5em solid rgb(186, 140, 148);
+	background: #FFC url(2006/bg.gif) scroll 0 0 no-repeat;
+}
+
+#caption2006 h2 {
+	font-size: 3em;
+	margin: 4em 0.5em 0 6em;
+	padding: 0;
+	
+	font-family: "Clarendon BT", "Clarendon", "Baskerville", "Times", serif;
+	font-weight: 800;
+	text-transform: lowercase;
+	border: none;
+	color: rgb(93, 70, 74);
+	background: transparent;
+}
+
+#caption2006 img {
+	border: none;
+}
+
+#caption2006 h2 .year {
+	font-family: univers, zurich, helvetica, helvetica neue,  arial, sans-serif;
+	font-weight: 200;
+}
+
+#caption2006 a:link,
+#caption2006 a:visited {
+	text-decoration: none;
+	color: rgb(93, 70, 74);
+}
+
+#caption2006 a:hover,
+#caption2006 a:active {
+	text-decoration: underline;
+	color: rgb(147, 219, 232);
+}
+
+#caption2006 p {
+	margin: 0 1.5em 0 18em;
+	padding: 0;
+}
+
+#caption2006logo {
+	position: absolute;
+	left: 48px;
+	top: 8px;
+}
+
+#caption2006slogan {
+	position: absolute;
+	left: 192px;
+	top: 24px;
+}

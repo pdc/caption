@@ -1,0 +1,64 @@
+
+#caption2003 h3 {
+	font-family: andale mono, lucida console, monospace;
+	font-size: 1.2em;
+	margin: 0px;
+	padding: 0 0.5em 0.5ex 0;
+	line-height: 1.5
+	border-bottom: 2px dotted #99FF99;
+	text-align: right;
+	background: #33CC33 url(2003/garden-bg.png) repeat-x;
+	color: #003300;
+}
+
+#caption2003 h3 a:link,
+#caption2003 h3 a:visited {
+	color: #003300;
+	text-decoration: none;
+}
+
+#caption2003 h3 img {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+
+#caption2003 p {
+	margin: 1em 0pt;
+}
+
+
+#caption2003 {
+	margin: 0.5em;
+	font-family: andale mono, lucida console, monospace;
+	background: #003300 url(2003/mac-bg-dk.png) repeat-x;
+	color: #66CC66;
+	border: 4px double #000000;
+	padding: 0pt;
+}
+
+#caption2003 h3 {
+}
+
+#caption2003-img {
+	margin: 0px;
+	padding: 0px;
+}
+
+#caption2003-logo a:link,
+#caption2003-logo a:visited {
+	color: #003300;
+}
+
+#caption2003 p a:link  {
+	color: #CCFFCC;
+}
+#caption2003 p a:visited {
+	color: #99FF99;
+}
+
+#caption2003-img  img {
+	border-right: 2px dotted #99FF99;
+	margin: -2px 12px -2px -2px;
+	padding: 0px;
+}

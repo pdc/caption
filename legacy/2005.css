@@ -1,0 +1,66 @@
+
+/*{{{ 2005 */
+#caption2005 {	
+	/*margin: 1em 206px 1em 64px;*/
+	margin: 0.5em;
+	
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #EEE;
+	color: #111;
+}
+
+#caption2005 h2 a:link {
+	color: #FFF;
+}
+
+#caption2005 h2 a:visited {
+	color: #EEE;
+}
+
+#caption2005 h2 a:hover {
+	color: #630;
+}
+
+#caption2005 h2 a:active {
+	color: #C60;
+}
+
+#caption2005 h2 {
+	margin: 0;
+	padding: 0;
+	
+	background: #630 url(2005/banner.png) 100% 50% no-repeat;
+	color: #FFF;
+	font-size: 3em;
+	font-weight: 200;
+	text-align: right;
+}
+
+#caption2005 h2 a {
+	display: block;
+	padding: 2em 0.333em 0;
+}
+
+#caption2005 h2 img {
+	display: block;
+	/* position: absolute; */
+	margin: -2em 0 0 -0.332em;
+	width: 3em;
+	height: 3em;
+	
+	border: none;
+}
+
+#caption2005 p {
+	margin: 0 1em 1.2em 9em;
+}
+
+#caption2005 p#caption2005slogan {
+	margin: 0 0 1.2em 0;
+	padding: 0.2em 1em 0.2em 9em;
+	
+	background-color: #630;
+	color: #EEE;
+	text-align: right;
+}
+ /*}}}*/

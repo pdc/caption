@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="299" height="212" viewBox="-1 -1 299 212">
+	<defs>
+	</defs>
+	<rect fill="#ffffff" stroke="#000000" stroke-width="2" x="0" y="0" width="297"
+		height="210"/>
+	<line fill="none" stroke="#000000" stroke-width="2" y1="0" x1="148.5" y2="210"
+		x2="148.5"/>
+	<line fill="none" stroke="#000000" stroke-width="2" y1="105" x1="0" y2="105"
+		x2="297"/>
+	<line fill="none" stroke="#808080" stroke-width="1" x1="74.25" y1="0"
+		x2="74.25" y2="210"/>
+	<line fill="none" stroke="#808080" stroke-width="1" x1="222.75" y1="0"
+		x2="222.75" y2="210"/>
+	<text fill="#000000" font-size="24" font-family="Arial"
+		text-decoration="underline">
+<tspan x="10" y="32">2</tspan>
+		<tspan x="84" y="32">15</tspan>
+		<tspan x="158" y="32">6</tspan>
+		<tspan x="232" y="32">11</tspan>
+		<tspan x="10" y="135">4</tspan>
+		<tspan x="84" y="135">13</tspan>
+		<tspan x="158" y="135">8</tspan>
+		<tspan x="232" y="135">9</tspan>
+			</text>
+	<text fill="#cccccc" font-size="24" text-decoration="underline"
+		font-family="Arial" transform="matrix(-1 0 0 1 297 0)">
+<tspan x="10" y="32">12</tspan>
+		<tspan x="84" y="32">5</tspan>
+		<tspan x="158" y="32">16</tspan>
+		<tspan x="232" y="32">1</tspan>
+		<tspan x="10" y="135">10</tspan>
+		<tspan x="84" y="135">7</tspan>
+		<tspan x="158" y="135">14</tspan>
+		<tspan x="232" y="135">3</tspan>
+			</text>
+</svg>

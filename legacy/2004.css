@@ -1,0 +1,40 @@
+
+
+/*{{{ 2004 */
+#caption2004 {	
+	/*margin: 1em 206px 1em 64px;*/
+	margin: 0.5em;
+	background: #F8F8F0 url(2004/vic2b.gif) 100% 4em no-repeat;
+	border: 3px double #C30;
+	max-width: 36em;
+	font-family: "Hoefler Text", Perpetua, Baskerville, Garamond, serif;
+	font-size: 1.2em;
+}
+
+#caption2004 h2 {
+	margin: 0;
+	padding: 0.25em 0.5em;
+	color: #C30;
+	border: none;
+	border-bottom: 1px dashed #C30;
+}
+
+#caption2004 p {
+	margin: 1em 200px 1em 4em;
+}
+
+#caption2004 a:link,
+#caption2004 a:visited {
+	color: #C30;
+	font-style: italic;
+}
+
+#caption2004-slogan {
+	text-indent: -5000px;
+	background: url(2004/backgraff.gif) 100% 0 no-repeat;
+	margin: 0;
+	width: 36em;
+	height: 129px;
+	position: absolute;
+}
+ /*}}}*/
