@@ -29,12 +29,13 @@
                 </article>
         </section>
         {% endwith %}
+
         <section id="what">
             <h2>What  is <span>CAPTION</span>?</h2>
             <p>
                 Oxford’s annual small-press comics convention is a unique, friendly event that brings comics creators, manga artists, comic-book readers and professionals together to mingle and discuss their work.
             </p>
-            <ul class="features">
+            <ul class="features" id="features">
                 {% for info in infos %}
                 <li>
                     {% if info.content %}
@@ -50,8 +51,14 @@
                 </li>
                 {% endfor %}
             </ul>
-            </p>
+            <script type="text/javascript" src="{{ STATIC_URL }}2012/masonry.min.js"></script>
+            <script type="text/javascript">
+                var features = new Masonry(document.getElementById('features'), {
+                    columnWidth: 160
+                  });
+            </script>
         </section>
+
 {% endblock %}
 {% block asides %}
         <aside id="articles">

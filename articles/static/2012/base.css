@@ -81,7 +81,6 @@ ul.features li {
     list-style-type: none;
 }
 
-
 ul.features h3 {
     font-size: 1em;
     margin: 0;
@@ -112,6 +111,7 @@ ul.features a:active b {
     text-decoration: underline;
     color: #932;
 }
+
 
 /* SPAN in sections is used for all-caps abbreviations */
 section span,
