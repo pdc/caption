@@ -41,12 +41,14 @@ def article(request, year, article_id, slug=None):
     if article.slug != slug:
         return HttpResponseRedirect(article_path)
     article_url = request.build_absolute_uri(article_path)
+    article_canonical_url = 'http://caption.org{0}'.format(article_path)
     tags = [get_object_or_404(Tag, name=year)]
     infos = tags[0].published_infos()
     articles =  tags[0].published_articles()
     return {
         'article': article,
         'article_url': article_url,
+        'article_canonical_url': article_canonical_url,
         'articles': articles,
         'infos': infos,
         'year': tags[0],

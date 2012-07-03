@@ -10,7 +10,7 @@
                         </dd>
                         <dt>Permalink</dt>
                         <dd>
-                            <a href=" {% url article-detail article_id=article.id year=article.year slug=article.slug %}#disqus_thread" data-disqus-identifier="{{ article.unique_id }}">Comments</a>
+                            <a href="{% url article-detail article_id=article.id year=article.year slug=article.slug %}#disqus_thread" data-disqus-identifier="{{ article.unique_id }}">Comments</a>
                         </dd>
                         {% if article_url %}
                         <dt>Share this</dt>
