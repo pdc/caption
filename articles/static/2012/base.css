@@ -25,6 +25,10 @@ p:active {
     border-color: #932;
 }
 
+img a {
+    border: noneN;
+}
+
 section {
     float: left;
     margin: 20px 0 0;
@@ -52,13 +56,17 @@ aside h2 {
     margin: 0 10px 0.5em 10px;
 }
 
+section p+h2 {
+    margin-top: 1.25em;
+}
+
 section p {
-    margin: 0 10px 1.25em 10px;
+    margin: 0 10px 0.625em 10px;
 }
 
 section ul,
 aside ul {
-    margin: 0 10px;
+    margin: 0 10px 0.625em;
     padding: 0;
 }
 

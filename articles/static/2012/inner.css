@@ -92,6 +92,11 @@ aside {
     width: 540px;
 }
 
+#info li p {
+    margin: 0;
+    width: auto;
+}
+
 section h1 {
     font-size: 2em;
     margin: 0 10px 0.5em;
