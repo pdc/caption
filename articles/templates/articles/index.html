@@ -18,6 +18,7 @@
         </header>
 {% endblock %}
 {% block main %}
+    {% if articles %}
         {% with article=articles|first %}
         <section id="article" {% if article.embedded_media %}class="has-embedded-media"{% endif %}>
             <p class="above-heading">Latest news</p>
@@ -29,6 +30,7 @@
                 </article>
         </section>
         {% endwith %}
+    {% endif %}
 
         <section id="what">
             <h2>What  is <span>CAPTION</span>?</h2>

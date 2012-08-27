@@ -8,6 +8,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from articles.models import Article, Info, Tag
 
 def with_template(template_name):
+    """A decorator for attaching a template to a view function.
+
+    The function returns a dictionary which is used
+    as the templat3e context.
+    """
     def view_decorator(view):
         def decorated_view(request, *args, **kwargs):
             result = view(request, *args, **kwargs)
@@ -19,17 +24,40 @@ def with_template(template_name):
     return view_decorator
 
 
+def get_year():
+    """Return the current year, used on the index page.
+
+    Split out as a separate function to allow for testing.
+    """
+    return datetime.now().year
+
+def get_now():
+    return datetime.now()
+
+
 @with_template('articles/index.html')
-def index(request, year):
-    if year is None:
-        year = datetime.now().year
-    tags = [get_object_or_404(Tag, name=year)]
+def index(request):
+    year_tag = Tag.objects.get(name=get_year())
+    tags = []
+    articles =  Article.objects.filter(published__lte=get_now())
+    infos = year_tag.published_infos()
+    return {
+        'articles': articles,
+        'infos': infos,
+        'year': year_tag,
+        'tags': tags,
+    }
+
+@with_template('articles/index.html')
+def year_index(request, year):
+    year_tag = get_object_or_404(Tag, name=year)
+    tags = [year_tag]
     articles =  tags[0].published_articles()
     infos = tags[0].published_infos()
     return {
         'articles': articles,
         'infos': infos,
-        'year': tags[0],
+        'year': year_tag,
         'tags': tags,
     }
 

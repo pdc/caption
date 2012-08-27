@@ -7,8 +7,65 @@ Replace this with more appropriate tests for your application.
 
 from django.test import TestCase
 from django.test.client import Client
+from mock import Mock, patch
+
+from datetime import datetime
+from django.utils.timezone import utc
 from django.contrib.auth.models import User
 from articles.models import Article, Info, Tag
+from articles import views
+
+class YearTests(TestCase):
+    def test_index_for_specified_year(self):
+        self.given_a_website_visitor()
+        self.given_articles_for_years([2012, 2011, 2010])
+
+        self.when_index_requested_with_year(2011)
+
+        self.then_chosen_articles_should_be([2011])
+
+    def test_index_for_current_year(self):
+        self.given_a_website_visitor()
+        self.given_articles_for_years([2012, 2011, 2010])
+
+        self.when_index_requested_without_year_when_current_year_is(2012)
+
+        self.then_chosen_articles_should_be([2012, 2011, 2010])
+
+    # helpers for the above tests:
+
+    def given_a_website_visitor(self):
+        self.client = Client()
+
+    def given_articles_for_years(self, ys):
+        self.author = User.objects.create(username='authorname')
+        self.tags = {}
+        for y in ys:
+            self.tags[y] = Tag.objects.get(name=str(y))
+            self.article = Article.objects.create(
+                author=self.author,
+                title=u'{0} ARTICLE'.format(y),
+                slug='{0}-article'.format(y),
+                content='CONTENT {0}'.format(y),
+                published=datetime(2012,8,21, 8,52,0).replace(tzinfo=utc))
+            self.article.tags.add(self.tags[y])
+            self.article.save()
+
+    def when_index_requested_with_year(self, y):
+        u = '/{0}/'.format(y)
+        self.response = self.client.get(u)
+
+    def when_index_requested_without_year_when_current_year_is(self, y):
+        u = '/'
+        with patch.object(views, 'get_year') as mock_year:
+            mock_year.return_value = y
+            self.response = self.client.get(u)
+            mock_year.assert_called_with()
+
+    def then_chosen_articles_should_be(self, ys):
+        article_titles = sorted(x.title for x in self.response.context['articles'])
+        expected_titles = ['{0} ARTICLE'.format(y) for y in sorted(ys)]
+        self.assertEqual(expected_titles, article_titles)
 
 
 class ArticleBehaviour(TestCase):

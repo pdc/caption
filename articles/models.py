@@ -1,10 +1,14 @@
 # -*-coding: UTF-8-*-
 
 from datetime import datetime
+from django.utils.timezone import utc
 from django.db import models
 from django.contrib.auth.models import User
 
 
+
+def get_now():
+    return datetime.utcnow()
 
 class Tag(models.Model):
     name = models.CharField(max_length=200, unique=True, db_index=True)
@@ -13,10 +17,10 @@ class Tag(models.Model):
         return self.name
 
     def published_articles(self):
-        return self.article_set.filter(published__lte=datetime.now())
+        return self.article_set.filter(published__lte=get_now())
 
     def published_infos(self):
-        return self.info_set.filter(published__lte=datetime.now())
+        return self.info_set.filter(published__lte=get_now())
 
 
 class Article(models.Model):
