@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
 
     'articles',
+    'drip',
 )
 
 # A sample logging configuration. The only tangible logging
