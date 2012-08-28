@@ -1,8 +1,8 @@
 
 body {
-    font-family: "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-    background-color: #FE7;
-    color: #443;
+    font-family: "GoudyBookletter1911Regular", serif;
+    background-color: #FBE5FF;
+    color: #543;
 }
 
 header {
@@ -33,7 +33,6 @@ article {
 
 h1, h2, .logo {
     margin: 1em 10px 0.5em;
-    font-family: 'Creepster', cursive;
     font-weight: normal;
 }
 

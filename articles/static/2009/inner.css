@@ -1,0 +1,36 @@
+
+.logo {
+    float: left;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #930;
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 2em;
+}
+
+#sections {
+    float: left;
+    width: 720px;
+}
+
+article {
+    width: 720px;
+    float: left;
+}
+
+article p {
+    margin: 1em 10px;
+}
