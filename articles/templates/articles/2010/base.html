@@ -1,4 +1,8 @@
 {% extends "articles/base.html" %}
+{% block basestyle %}
+        <link href='http://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}{{ year }}/base.css">
+{% endblock %}
 {% block header %}
         <header>
             <p class="logo">
@@ -9,7 +13,7 @@
                 </a>
             </p>
             <p class="dates-and-venue">
-                31 July &amp; 1 August 2011<br>
+                31 July &amp; 1 August 2010<br>
                 East Oxford Community Centre
             </p>
         </header>

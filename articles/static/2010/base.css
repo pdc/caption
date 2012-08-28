@@ -1,0 +1,77 @@
+
+body {
+    font-family: "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    background-color: #FE7;
+    color: #443;
+}
+
+header {
+    display: block;
+    float: left;
+    width: 100%;
+}
+#main {
+    width: 960px;
+    margin: 0 auto;
+}
+#what,
+aside {
+    float: left;
+    width: 240px;
+    font-size: 0.9em;
+}
+
+.dates-and-venue {
+    margin: 1em 10px 0.5em;
+    float: right;
+}
+
+#article,
+article {
+    width: 720px;
+}
+
+h1, h2, .logo {
+    margin: 1em 10px 0.5em;
+    font-family: 'Creepster', cursive;
+    font-weight: normal;
+}
+
+h1 i,
+.logo i {
+    font-style: normal;
+}
+
+q:before {
+    content: "‘";
+}
+
+q:after {
+    content: "’";
+}
+
+
+#article dl,
+article dl {
+    font-size: 0.75em;
+    float: right;
+    width: 220px;
+    margin: 1em 10px 1em 20px;
+}
+
+dt {
+    margin: 0;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+dd {
+    margin: 0 0 0.5em;
+}
+
+.embedded-media {
+    float: left;
+    width: 220px;
+    margin: 0 20px 1em 10px;
+}

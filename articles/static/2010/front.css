@@ -1,0 +1,34 @@
+
+
+
+h1 {
+    float: left;
+    font-size: 4em;
+    margin-top: 0;
+}
+
+#article {
+    width: 720px;
+    float: left;
+}
+
+#article p {
+    margin: 1em 10px;
+}
+
+
+#what p {
+    margin: 1em 10px;
+}
+
+aside table {
+    margin: 1em 5px;
+    border-collapse: collapse;
+}
+
+aside td,
+aside th {
+    padding: 0.1em 5px;
+    text-align: left;
+    vertical-align: top;
+}
