@@ -1,0 +1,16 @@
+{% extends "articles/base.html" %}
+{% block header %}
+        <header>
+            <p class="logo">
+                <a href="{% url article-year-index year=year %}">
+                    <b>Caption</b>
+                    <i>2009</i>
+                    <q>is Away with the Faries</q>
+                </a>
+            </p>
+            <p class="dates-and-venue">
+                15–16 August 2009<br>
+                East Oxford Community Centre
+            </p>
+        </header>
+{% endblock %}

@@ -1,0 +1,44 @@
+header h1 {
+    float: left;
+    font-size: 3em;
+    margin: 0 0;
+    padding: 0.6em 20px 0.6em 140px;
+
+    font-family: "Univers", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
+    background: url(stickman-in-circle-100.png) 20px 50% no-repeat;
+    -webkit-transform: rotate(0.5deg);
+}
+
+h1 q {
+    font-weight: 100;
+}
+h1 b {
+    font-weight: 900;
+}
+h1 i {
+    font-weight: 200;
+    font-style: normal;
+}
+
+h2  {
+    font-family: "Univers", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
+    font-size: 1.44em;
+}
+
+#what {
+    width: 240px;
+}
+
+#what p {
+    margin: 1em 10px;
+}
+
+.twtr-widget {
+    margin: 1em 10px;
+}

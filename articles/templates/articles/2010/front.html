@@ -1,0 +1,20 @@
+{% extends "articles/index.html" %}
+
+{% block title %}CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}{% endblock %}
+{% block morestyle %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}{{ year }}/front.css">
+{% endblock %}
+
+{% block header %}
+        <header>
+            <h1>
+                <q>Mad Science</q>
+                <b>Caption</b>
+                <i>2010</i>
+            </h1>
+            <p class="dates-and-venue">
+                31 July &amp; 1 August 2011<br>
+                East Oxford Community Centre
+            </p>
+        </header>
+{% endblock %}

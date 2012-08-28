@@ -11,7 +11,7 @@ def with_template(template_name):
     """A decorator for attaching a template to a view function.
 
     The function returns a dictionary which is used
-    as the templat3e context.
+    as the template context.
     """
     def view_decorator(view):
         def decorated_view(request, *args, **kwargs):
@@ -19,7 +19,9 @@ def with_template(template_name):
             if isinstance(result, HttpResponse):
                 return result
             template_vars = result
-            return render(request, template_name, template_vars)
+            if 'year' in template_vars:
+                template_vars['base_template'] = 'articles/{0}/base.html'.format(template_vars['year'])
+            return render(request, template_vars.get('template', template_name), template_vars)
         return decorated_view
     return view_decorator
 
@@ -46,6 +48,7 @@ def index(request):
         'infos': infos,
         'year': year_tag,
         'tags': tags,
+        'template': 'articles/{0}/front.html'.format(year_tag.name),
     }
 
 @with_template('articles/index.html')
@@ -59,6 +62,7 @@ def year_index(request, year):
         'infos': infos,
         'year': year_tag,
         'tags': tags,
+        'template': 'articles/{0}/front.html'.format(year_tag.name),
     }
 
 @with_template('articles/article.html')

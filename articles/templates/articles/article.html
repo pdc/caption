@@ -1,4 +1,4 @@
-{% extends "articles/base.html" %}
+{% extends base_template %}
 {% load markup %}
 
 {% block title %}{{ article.title }} - CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}{% endblock %}

@@ -1,0 +1,35 @@
+
+header {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 110px;
+    margin: 0;
+    padding: 0;
+
+    background: url(stickman-in-circle-100.png) 50% 50% no-repeat;
+}
+
+p.logo, h1, h2  {
+    float: left;
+
+    font-family: "Univers", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
+}
+h1 {
+    font-size: 1.44em;
+    width: 700px;
+}
+h2 {
+    font-size: 1.2em;
+    width: 220px;
+}
+
+p.logo {
+    margin: 20px 20px;
+    padding: 0.5em 20px;
+    font-size: 2em;
+    -webkit-transform: rotate(1deg);
+}

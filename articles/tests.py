@@ -32,6 +32,30 @@ class YearTests(TestCase):
 
         self.then_chosen_articles_should_be([2012, 2011, 2010])
 
+    def test_when_year_specified_base_template_is_for_that_year(self):
+        self.given_a_website_visitor()
+        self.given_articles_for_years([2012, 2011, 2010])
+
+        self.when_index_requested_with_year(2011)
+
+        self.then_base_template_should_be('articles/2011/base.html')
+
+    def test_when_year_specified_index_template_is_for_that_year(self):
+        self.given_a_website_visitor()
+        self.given_articles_for_years([2012, 2011, 2010])
+
+        self.when_index_requested_with_year(2011)
+
+        self.then_should_use_template('articles/2011/front.html')
+
+    def test_when_year_unspecified_template_is_for_current_year(self):
+        self.given_a_website_visitor()
+        self.given_articles_for_years([2012, 2011, 2010])
+
+        self.when_index_requested_without_year_when_current_year_is(2012)
+
+        self.then_base_template_should_be('articles/2012/base.html')
+
     # helpers for the above tests:
 
     def given_a_website_visitor(self):
@@ -66,6 +90,13 @@ class YearTests(TestCase):
         article_titles = sorted(x.title for x in self.response.context['articles'])
         expected_titles = ['{0} ARTICLE'.format(y) for y in sorted(ys)]
         self.assertEqual(expected_titles, article_titles)
+
+    def then_base_template_should_be(self, expected):
+        self.assertEqual(expected, self.response.context['base_template'])
+
+    def then_should_use_template(self, template_name):
+        self.assertTrue(any(t for t in self.response.templates if t.name == template_name),
+                'Expected to use the template %r' % template_name)
 
 
 class ArticleBehaviour(TestCase):
