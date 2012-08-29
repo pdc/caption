@@ -205,8 +205,8 @@ def parse_values_lists(s):
 def slug_from_title(title):
     slug = slugify(title)
     if len(slug) > 50:
-        p = slug.rfind('-', 50)
-        if p > 20:
+        p = slug.rfind('-', 20, 50)
+        if p >= 20:
             slug = slug[:p]
         else:
             slug = slug[:50]
