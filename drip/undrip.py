@@ -202,6 +202,15 @@ def parse_values_lists(s):
     return result
 
 
+def slug_from_title(title):
+    slug = slugify(title)
+    if len(slug) > 50:
+        p = slug.rfind('-', 50)
+        if p > 20:
+            slug = slug[:p]
+        else:
+            slug = slug[:50]
+    return slug
 
 
 
@@ -274,7 +283,7 @@ class Protoarticle(object):
         self.nid = node['nid']
         self.uid = node['uid']
         self.title = node['title']
-        self.slug = slugify(self.title)
+        self.slug = slug_from_title(self.title)
         self.is_published = node['status']
         self.created = datetime_from_timestamp(node['created'])
         self.updated = datetime_from_timestamp(node['changed'])
