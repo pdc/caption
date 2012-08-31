@@ -10,13 +10,6 @@
     text-decoration: none;
 }
 
-a:hover,
-a:active {
-    color: #930;
-    text-decoration: underline;
-}
-
-
 h1 {
     font-size: 2em;
 }

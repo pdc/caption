@@ -5,8 +5,30 @@ body {
     color: #543;
 }
 
-em {
+em,
+i {
     font-family: "Century Schoolbook", "Times New Roman", "Times", serif;
+}
+
+a:link {
+    color: #234;
+}
+a:visited {
+    color: #123;
+}
+
+a:hover,
+a:active {
+    color: #369;
+    background-color: #FFF;
+    text-decoration: underline;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+    background-color: #FFF;
+    color: #369;
 }
 
 header {
@@ -58,6 +80,10 @@ article>div small { /* Used for picture credits */
     font-variant: small-caps;
     text-transform: lowercase;
     letter-spacing: 0.05em;
+}
+article>div a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1, h2, .logo {
