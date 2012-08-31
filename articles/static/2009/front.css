@@ -1,10 +1,12 @@
 
 
 
-h1 {
-    float: left;
-    font-size: 4em;
-    margin-top: 0;
+h1 { /* Hide this in favour of the bg image */
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
 }
 
 #article {
@@ -16,9 +18,28 @@ h1 {
     margin: 1em 10px;
 }
 
+article {
+    padding-top: 1px;
+}
+
+#article p {
+    margin-top: 0.4em;
+}
 
 #what p {
     margin: 1em 10px;
 }
 
+#above-heading {
+    margin: 0;
+    padding: 0 0 0.25em 0;
 
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    border-bottom: 1px dotted #764;
+}
+
+#article h2 {
+    margin: 0.25em 10px;
+}

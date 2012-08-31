@@ -1,17 +1,43 @@
 
 .logo {
-    float: left;
-    font-size: 2em;
-    margin-top: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 10px;
+    top: 30px;
 }
 
 .logo a {
+    display: block;
+    width: 250px;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+
     color: inherit;
     text-decoration: none;
+    background:  url(shirt-by-terry-wiley-pink-250x450.png) 0 0 no-repeat;
+    border-radius: 10px;
+}
+
+.logo a:hover,
+.logo a:active {
+    background-color: rgba(250, 255, 240, 0.75);
+}
+
+.logo a b,
+.logo a i,
+.logo a q {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 h1 {
     font-size: 2em;
+    margin: 0.25em 10px 0;
+    line-height: 1.1;
 }
 
 #sections {

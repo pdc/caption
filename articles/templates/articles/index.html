@@ -21,13 +21,15 @@
     {% if articles %}
         {% with article=articles|first %}
         <section id="article" {% if article.embedded_media %}class="has-embedded-media"{% endif %}>
+            {% block above-heading %}
             <p class="above-heading">Latest news</p>
-                <h2>{{ article.title }}</h2>
-                {% include "articles/article-metadata-part.html" %}
-                <article>
-                    {% include "articles/article-embedded-media-part.html" %}
-                    {{ article.content|markdown }}
-                </article>
+            {% endblock %}
+            <h2>{{ article.title }}</h2>
+            {% include "articles/article-metadata-part.html" %}
+            <article>
+                {% include "articles/article-embedded-media-part.html" %}
+                {{ article.content|markdown }}
+            </article>
         </section>
         {% endwith %}
     {% endif %}
