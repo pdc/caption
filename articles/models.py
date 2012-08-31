@@ -22,6 +22,9 @@ class Tag(models.Model):
     def published_infos(self):
         return self.info_set.filter(published__lte=get_now())
 
+    class Meta:
+        # Alphabetical order
+        ordering = ('name',)
 
 class Article(models.Model):
     author = models.ForeignKey(User)
