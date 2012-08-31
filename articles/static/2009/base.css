@@ -61,7 +61,6 @@ article {
     width: 640px;
     font-size: 1.2em;
     background: rgba(250, 255, 240, 0.25);
-    border-radius: 5px;
 }
 
 article>div[style], /* Used in articles to position images */
