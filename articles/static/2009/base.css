@@ -4,6 +4,8 @@ body {
     padding: 0;
     font-family: "GoudyBookletter1911Regular", serif;
     background: #9C6 url(shirt-by-terry-wiley-pink-250x450.png) 10px 30px no-repeat;
+    background:  url(shirt-by-terry-wiley-pink-250x450.png) 10px 30px no-repeat,
+        #9C6 url(fairy-bg.jpeg);
     color: #402;
 }
 
@@ -52,8 +54,13 @@ aside {
 }
 
 .dates-and-venue {
-    margin: 1em 10px 0.5em;
+    display: block;
     float: right;
+    margin: 0;
+    padding: 1em 10px 0.5em 94px;
+    height: 70px;
+    background: url(fairy-stickfigure-84x70.png) left top no-repeat;
+    background: url(fairy-stickfigure-167x140.png) left top  / 84px 70px no-repeat;
 }
 
 #article,

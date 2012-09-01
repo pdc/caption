@@ -68,6 +68,7 @@
         <aside id="articles">
             {% include "articles/article-list-part.html" %}
         </aside>
+    {% block tweets %}
         <aside id="tweets">
             <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
@@ -98,7 +99,9 @@ new TWTR.Widget({
 }).render().setUser('captioncon').start();
 </script>
         </aside>
+    {% endblock %}
 {% endblock %}
+
 {% block disqusjs %}
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
