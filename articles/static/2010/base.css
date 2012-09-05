@@ -1,15 +1,12 @@
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-    background-color: #FE7;
+    background-color: #F8F0E0;
     color: #443;
 }
 
-header {
-    display: block;
-    float: left;
-    width: 100%;
-}
 #main {
     width: 960px;
     margin: 0 auto;
@@ -17,18 +14,23 @@ header {
 #what,
 aside {
     float: left;
-    width: 240px;
+    width: 320px;
     font-size: 0.9em;
-}
-
-.dates-and-venue {
-    margin: 1em 10px 0.5em;
-    float: right;
 }
 
 #article,
 article {
-    width: 720px;
+    width: 640px;
+}
+
+#main:after,
+header:after,
+#asides:after {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    content: ".";
 }
 
 h1, h2, .logo {
@@ -49,7 +51,6 @@ q:before {
 q:after {
     content: "’";
 }
-
 
 #article dl,
 article dl {
@@ -76,9 +77,18 @@ dd {
     margin: 0 20px 1em 10px;
 }
 
+article h3 {
+    font-size: 1em;
+    margin: 1em 10px 0.5em;
+}
+
+article pre {
+    font-size: 0.9em;
+    margin: 1em 10px;
+}
 
 aside table {
-    margin: 1em 5px;
+    margin: 1em 5px; /* When cell padding added this makes the usual 10px */
     border-collapse: collapse;
 }
 
@@ -87,4 +97,8 @@ aside th {
     padding: 0.1em 5px;
     text-align: left;
     vertical-align: top;
+}
+
+aside td:first-child {
+    width: 70px;
 }

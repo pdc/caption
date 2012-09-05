@@ -19,6 +19,7 @@
 {% endblock %}
 {% block main %}
     {% if articles %}
+        {% block featured-article %}
         {% with article=articles|first %}
         <section id="article" {% if article.embedded_media %}class="has-embedded-media"{% endif %}>
             {% block above-heading %}
@@ -32,6 +33,7 @@
             </article>
         </section>
         {% endwith %}
+        {% endblock %}
     {% endif %}
 
         <section id="what">

@@ -47,12 +47,16 @@
 {% endblock %}
 
 {% block asides %}
+    {% if articles %}
         <aside id="article-list">
             {% include "articles/article-list-part.html" %}
         </aside>
+    {% endif %}
+    {% if infos %}
         <aside id="info-list">
             {% include "articles/info-list-part.html" %}
         </aside>
+    {% endif %}
 {% endblock %}
 
 {% block disqusjs %}

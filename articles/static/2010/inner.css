@@ -1,4 +1,14 @@
 
+header {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 20px 0 30px;
+    width: 100%;
+    min-height: 72px;
+    background: url(mad-scientist-rainbow-144.png) 50% 100% no-repeat;
+}
+
 .logo {
     float: left;
     font-size: 2em;
@@ -10,27 +20,57 @@
     text-decoration: none;
 }
 
+.dates-and-venue {
+    margin: 1em 10px 0.5em;
+    float: right;
+}
+
 a:hover,
 a:active {
     color: #930;
     text-decoration: underline;
 }
 
-
 h1 {
     font-size: 2em;
+    margin: 0 10px 0.5em;
 }
 
 #sections {
     float: left;
-    width: 720px;
+    width: 640px;
+}
+
+#asides {
+    float: right;
+    margin: 6em 0 0;
+    width: 314px; /* allow for margins */
+    background: #AB0;
+    border-radius: 10px;
+    border-right: 5px double #432;
+    border-bottom: 5px double #432;
+    border-left: 1px outset #9A0;
+    border-top: 1px outset #9A0;
+    box-shadow: rgba(17, 34, 51, 0.5) 1px 1px 2px;
+    -webkit-transform: rotate(0.5deg);
 }
 
 article {
-    width: 720px;
+    width: 640px;
     float: left;
 }
 
 article p {
     margin: 1em 10px;
+}
+
+#disqus_thread {
+    clear: both;
+    margin: 1.2em 10px 0;
+    padding-top: 1.2em;
+    border-top: 1px solid #432;
+}
+
+.dsq-brlink {
+    margin: 1.2em 10px 0;
 }
