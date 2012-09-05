@@ -1,8 +1,13 @@
-
+/*[[[cog
+def transform(text):
+    for prefix in '-moz-', '-webkit-', '-ms-', '-o-', '':
+        cog.outl('%stransform: %s;' % (prefix, text))
+]]]*/
+/*[[[end]]]*/
 
 header {
     width: 960px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 
     background-color: #AB0;
     border-top-left-radius: 10px;
@@ -11,6 +16,7 @@ header {
 
 header, #main {
     border-right: 5px double #456;
+    box-shadow: rgba(0, 11, 51, 0.75) 1px 1px 3px;
 }
 
 h1 {
@@ -24,7 +30,13 @@ h1 q {
     float: left;
     display: block;
     font-size: 1.5em;
+    /*[[[cog transform('rotate(-15deg)') ]]]*/
+    -moz-transform: rotate(-15deg);
     -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    /*[[[end]]]*/
 }
 
 .dates-and-venue {
@@ -43,14 +55,20 @@ h1 q {
 #main {
     width: 960px;
     min-height: 800px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 
     color: #FFF;
     font-weight: bolder;
     background: #AB0 url(mad-scientist-rainbow-720.png) 50px 0 no-repeat;
+    background-size: 720px 720px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom: 5px double #456;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #main {
+        background-image: url(mad-scientist-rainbow-1440.png);
+    }
 }
 
 #main a {

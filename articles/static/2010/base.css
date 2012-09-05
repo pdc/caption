@@ -37,6 +37,7 @@ h1, h2, .logo {
     margin: 1em 10px 0.5em;
     font-family: 'Creepster', cursive;
     font-weight: normal;
+    text-shadow: #3F6 0 0 5px;
 }
 
 h1 i,

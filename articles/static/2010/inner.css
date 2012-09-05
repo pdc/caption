@@ -7,6 +7,13 @@ header {
     width: 100%;
     min-height: 72px;
     background: url(mad-scientist-rainbow-144.png) 50% 100% no-repeat;
+    background-size: 144px 144px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    #main {
+        background-image: url(mad-scientist-rainbow-288.png);
+    }
 }
 
 .logo {
