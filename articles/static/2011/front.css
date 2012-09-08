@@ -1,13 +1,11 @@
+
+
 header h1 {
     float: left;
     font-size: 3em;
     margin: 0 0;
     padding: 0.6em 20px 0.6em 140px;
 
-    font-family: "Univers", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
     background: url(stickman-in-circle-100.png) 20px 50% no-repeat;
     -webkit-transform: rotate(0.5deg);
 }
@@ -24,15 +22,11 @@ h1 i {
 }
 
 h2  {
-    font-family: "Univers", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
     font-size: 1.44em;
 }
 
 #what {
-    width: 240px;
+    width: 320px;
 }
 
 #what p {

@@ -3,6 +3,7 @@ body {
     padding: 0;
 
     font-family: "Courier New", "Courier", monospace;
+    line-height: 1.25;
     background-color: #F0F0F7;
     color: #334;
 }
@@ -11,6 +12,14 @@ h1, h2 {
     margin: 0 0 0.5em;
     padding: 0.5em 10px;
     -webkit-transform: rotate(-0.25deg);
+}
+
+h1, h2, #article dl, article dl {
+    clear: both;
+    font-family: "Univers", "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: rgba(51, 51, 68, 0.5) 1px 1px 3px;
 }
 
 .logo a {
@@ -49,27 +58,42 @@ h1, h2 {
 
 section, #asides {
     display: block;
-    float: left;
+    float: right;
 }
 
 section#article {
-    width: 720px;
+    width: 640px;
 }
 #asides {
-    width: 240px;
+    width: 320px;
 }
 
 article dl,
 #article dl {
-    float: left;
-    margin: 0 10px;
-    width: 220px;
+    display: block;
+    font-size: 0.9em;
+    padding: 0.625em 0;
+    -webkit-transform: rotate(0.25deg);
+}
 
-    -webkit-transform: rotate(0.5deg);
+@media screen {
+    dt {
+        display: none;
+    }
+}
+
+dd {
+    display: inline;
+    padding: 0;
+    margin: 0 10px;
+}
+
+dd:after {
+    content: "/";
 }
 
 article p {
-    margin: 1em 10px 1em 250px;
+    margin: 1.25em 10px ;
 }
 
 #asides table {
@@ -83,5 +107,9 @@ article p {
     text-align: left;
     vertical-align: top;
     border-bottom: 0.5px solid rgba(51, 51, 68, 0.5);
+}
+
+#asides td:first-child {
+    width: 70px;
 }
 
