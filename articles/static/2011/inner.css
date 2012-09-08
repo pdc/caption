@@ -20,7 +20,7 @@ p.logo, h1, h2  {
 }
 h1 {
     font-size: 1.44em;
-    width: 620px;
+    width: 620px; /* 8u */
 }
 h2 {
     font-size: 1.2em;

@@ -14,7 +14,12 @@ h1, h2 {
     -webkit-transform: rotate(-0.25deg);
 }
 
-h1, h2, #article dl, article dl {
+h1,
+h2,
+#article dl,
+article dl,
+.embedded-media,
+#disqus_thread  {
     clear: both;
     font-family: "Univers", "Neue Haas Grotesk", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
     text-transform: uppercase;
@@ -113,3 +118,22 @@ article p {
     width: 70px;
 }
 
+.embedded-media {
+    display: block;
+    float: left;
+    width: 290px;
+    margin: 0 20px 10px 0;
+    padding: 10px 10px 0 10px;
+    background-color: rgba(17, 34,51, 0.1);
+}
+
+.embedded-media small {
+    display: block;
+    font-size: 9px;
+    -webkit-transform: translate(50%, 0) rotate(-90deg) translate(50%, -1em);
+}
+
+#disqus_thread {
+    padding: 10px;
+    background-color: rgba(17, 34,51, 0.1);
+}
