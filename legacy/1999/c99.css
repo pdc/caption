@@ -1,6 +1,6 @@
 /* c99.css --
   Style sheet for spacecaption99
-  Time-stamp: <pdc 2001-03-18>	
+  Time-stamp: <pdc 2001-03-18>
 */
 
 body {
@@ -39,7 +39,7 @@ div.content p {
 
 div.content {
 	background-color: white;
-	color: black;	
+	color: black;
 	padding-left: 72px;
 	padding-right: 6pt;
 	padding-top: 3pt;
@@ -60,6 +60,16 @@ p.path {
 	color: white;
 }
 
+p.path a:link,
+p.path a:visited {
+	color: inherit;
+}
+p.path a:hover,
+p.path a:active {
+	color: #C30;
+	background-color: #300;
+}
+
 p.coda {
 	font-size: 8pt;
 	margin: 0pt;
@@ -72,6 +82,14 @@ p.link {
 	border: 1px dotted gray;
 	padding: 6pt;
 	margin-right: 3pt;
+}
+
+p.link:after {
+	display: block;
+	clear: both;
+	content: ".";
+	height: 0;
+	overflow: hidden;
 }
 
 h1 {
