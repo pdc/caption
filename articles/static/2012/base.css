@@ -45,6 +45,12 @@ aside {
     margin: 0 0 20px;
 }
 
+h2,
+h3 {
+    font-weight: 600;
+    font-style: italic;
+}
+
 section h2,
 section p,
 section ul {

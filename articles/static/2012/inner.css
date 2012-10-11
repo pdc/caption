@@ -100,6 +100,9 @@ aside {
 section h1 {
     font-size: 2em;
     margin: 0 10px 0.5em;
+
+    font-weight: 600;
+    font-style: italic;
 }
 
 section iframe {
