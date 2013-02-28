@@ -1,0 +1,22 @@
+{% extends "articles/base.html" %}
+{% block basestyle %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/MyFontsWebfontsOrderM3677995.css">
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}2012/base.2012101101.css">
+{% endblock %}
+{% block header %}
+        <header>
+            <p class="logo">
+                <a href="{% url article-year-index year=year %}">
+                    <b>Caption</b>
+                    <i>Summer Special</i>
+                </a>
+            </p>
+            <div id="picture">
+                <img src="{{ STATIC_URL }}2012/stickman-colour-100x142.png" alt="" width="100" height="142" />
+            </div>
+            <p class="dates-and-venue">
+                18 &amp; 19 August 2012<br>
+                East Oxford Community Centre
+            </p>
+        </header>
+{% endblock %}

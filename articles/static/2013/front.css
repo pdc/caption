@@ -1,0 +1,255 @@
+header {
+    float: left;
+    width: 300px;
+    margin: 20px 10px;
+    text-shadow: #FFF 1px 1px 2px ;
+}
+
+h1 {
+    display: block;
+    margin: 0;
+    width: 300px;
+    height: 67px;
+    text-indent: -1000px;
+    background: transparent url(wordmark-300x67.png) left top no-repeat;
+}
+
+@media screen and (min-width: 1120px) {
+    h1 {
+        display: block;
+        margin: 0;
+        width: 400px;
+        height: 90px;
+        text-indent: -1000px;
+        background: transparent url(wordmark-400x90.png) left top no-repeat;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    h1 {
+        display: block;
+        margin: 0;
+        width: 220px;
+        height: 49px;
+        text-indent: -1000px;
+        background: transparent url(wordmark-220x49.png) left top no-repeat;
+    }
+}
+
+
+h1 b {
+    display: block;
+    font-size: 58px;
+
+    line-height: 45px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 i {
+    display: block;
+    font-size: 28px;
+
+    line-height: 23px;
+    font-style: normal;
+    text-align: center;
+}
+
+#picture img {
+    width: 300px;
+
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}
+
+#main {
+    float: none;
+    width: auto;
+}
+
+#article {
+    width: 640px;
+}
+#what {
+    width: 320px;
+}
+
+article {
+    width: 100%;
+}
+
+.has-embedded-media article {
+}
+
+ .embedded-media {
+    float: left;
+    width: 300px;
+    margin: 0 20px 0.5em 10px;
+}
+
+article p {
+    width: auto;
+}
+#article p.above-heading {
+    margin: 0 10px;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+}
+#article h2 {
+    width: auto;
+    margin: 0 10px;
+}
+
+section dl {
+    font-size: 0.7em;
+    width: 640px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+section dt {
+    margin: 0 10px;
+}
+
+@media screen {
+    dt {
+        display: none;
+    }
+}
+
+section dd {
+    float: left;
+    width: 140px;
+    margin: 0 10px 0.625em;
+    color: #666;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+section dd a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section dd a u {
+    color: rgba(153, 51, 34, 0.5);
+    text-decoration: none;
+}
+
+section dd a:hover,
+section dd a:active,
+section dd a:hover u,
+section dd a:active u {
+    text-decoration: underline;
+    color: #932;
+}
+
+
+#what p {
+    width: auto;
+}
+
+#what ul {
+    width: 100%;
+}
+
+/*
+* Overrides for screen widths.
+* The default  page width is 980px (SVGA)
+* These overrides have to be organized in
+* order of increasing deviation from the default.
+*/
+
+/* Wider than default screens get bigger logo */
+@media screen and (min-width: 1120px) {
+    header {
+        width: 400px;
+        margin: 20px 20px;
+    }
+    header,
+    h1,
+    #picture img {
+        width: 400px;
+    }
+    #article {
+        width: 640px;
+    }
+    h1 b {
+        font-size: 75px;
+        line-height: 60px;
+    }
+    h1 i {
+        font-size: 37px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #article {
+        width: 720px;
+    }
+    #what {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #article  {
+        width: 800px;
+    }
+    #what {
+        width: 800px;
+    }
+    #what>p {
+        width: 540px;
+    }
+}
+
+/* Smaller than default scrteens get smaller logo */
+@media screen and (max-width: 980px) {
+    #article  {
+        width: 480px;
+    }
+    article {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    #what {
+        clear: left;
+        width: 560px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    header {
+        width: 220px;
+        margin: 20px 10px;
+    }
+    h1 b {
+        font-size: 42px;
+        line-height: 30px;
+    }
+    h1 i {
+        font-size: 20px;
+        line-height: 15px;
+    }
+    header p {
+        font-size: 1em;
+    }
+    h1,
+    #picture img {
+        width: 220px;
+    }
+    #what {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #article  {
+        width: 320px;
+    }
+    #what {
+        width: 320px;
+    }
+}

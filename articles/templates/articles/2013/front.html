@@ -1,0 +1,113 @@
+{% extends base_template %}
+{% load markup %}
+
+{% block title %}CAPTION{% for tag in tags %} {{ tag.name }}{% endfor %}{% endblock %}
+{% block morestyle %}
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}{{ year }}/front.2012101101.css">
+{% endblock %}
+
+{% block header %}
+        <header>
+            <h1>
+                <b>Caption</b>
+                <i>Summer Special</i>
+            </h1>
+            <div id="picture">
+                <img src="{{ STATIC_URL }}2012/stickman-colour.png" alt="" width="400" />
+            </div>
+        </header>
+{% endblock %}
+{% block main %}
+    {% if articles %}
+        {% with article=articles|first %}
+        <section id="article" {% if article.embedded_media %}class="has-embedded-media"{% endif %}>
+            <p class="above-heading">Latest news</p>
+                <h2>{{ article.title }}</h2>
+                {% include "articles/article-metadata-part.html" %}
+                <article>
+                    {% include "articles/article-embedded-media-part.html" %}
+                    {{ article.content|markdown }}
+                </article>
+        </section>
+        {% endwith %}
+    {% endif %}
+
+        <section id="what">
+            <h2>What  is <span>CAPTION</span>?</h2>
+            <p>
+                Oxford’s annual small-press comics convention is a unique, friendly event that brings comics creators, manga artists, comic-book readers and professionals together to mingle and discuss their work.
+            </p>
+            <ul class="features" id="features">
+                {% for info in infos %}
+                <li>
+                    {% if info.content %}
+                    <a href="{% url info-detail year=year info_name=info.name %}">
+                        <h3>{{ info.title }}</h3>
+                        {{ info.summary|markdown }}
+                        <b>Read more ></b>
+                    </a>
+                    {% else %}
+                    <h3>{{ info.title }}</h3>
+                    {{ info.summary|markdown }}
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            <script type="text/javascript" src="{{ STATIC_URL }}2012/masonry.min.js"></script>
+            <script type="text/javascript">
+                var features = new Masonry(document.getElementById('features'), {
+                    columnWidth: 160
+                  });
+            </script>
+        </section>
+
+{% endblock %}
+{% block asides %}
+        <aside id="articles">
+            {% include "articles/article-list-part.html" %}
+        </aside>
+        <aside id="tweets">
+            <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 30000,
+  width: 220,
+  height: 280,
+  theme: {
+    shell: {
+      background: '#3a6988',
+      color: '#FDFFD7'
+    },
+    tweets: {
+      background: '#dcc44c',
+      color: '#444444',
+      links: '#993322'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('captioncon').start();
+</script>
+        </aside>
+{% endblock %}
+{% block disqusjs %}
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'caption';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+{% endblock %}
